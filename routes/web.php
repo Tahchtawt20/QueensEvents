@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome')->name('home');
+Route::view('/about', ('about'))->name('about');
+Route::view('/menu', ('menu'))->name('menu');
+Route::view('/reservation', ('reservation'))->name('reservation');
+Route::view('/special', ('special'))->name('special');
+Route::view('/team', ('team'))->name('team');

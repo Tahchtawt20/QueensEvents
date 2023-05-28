@@ -89,16 +89,16 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href={{route("about")}}>About</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href={{route('special')}} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Special Dishes
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="special-dishes.html">Beef Steak Sauce</a>
-                          <a class="dropdown-item" href="special-dishes.html">Salmon Zucchini</a>
+                          <a class="dropdown-item" href={{route('special')}} >Steak Sauce</a>
+                          <a class="dropdown-item" href={{route('special')}} >Salmon Zucchini</a>
                         </div>
                     </li>
                 </div>
@@ -110,14 +110,14 @@
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
                     <li class="nav-item active">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link" href={{route("menu")}}>Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
+                        <a class="nav-link" href={{route("team")}}>Team</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="reservation.html">Reservation</a>
+                        <a class="nav-link" href={{route("reservation")}}>Reservation</a>
                     </li>
                 </div>
                 <li class="nav-item">
