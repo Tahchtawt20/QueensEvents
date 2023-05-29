@@ -128,7 +128,7 @@
   <div class="container">
 	<div class="row d-flex align-items-center">
 		<div class="col-lg-6 hero-left">
-		    <h1 class="display-4 mb-5">We Love <br>Delicious Foods!</h1>
+		    <h1 class="display-4 mb-5">Wedding Planner <br> & Event Designer</h1>
 		    <div class="mb-2">
 		    	<a class="btn btn-primary btn-shadow btn-lg" href="#" role="button">Explore Menu</a>
 			    <a class="btn btn-icon btn-lg" href="https://youtu.be/csz_UswEe8c">
@@ -139,13 +139,13 @@
 		   
 		    <ul class="hero-info list-unstyled d-flex text-center mb-0">
 		    	<li class="border-right">
-		    		<span class="lnr lnr-rocket"></span>
+		    		<span class="lnr lnr-magic-wand"></span>
 		    		<h5>
-		    			Fast Delivery
+		    			Creativity
 		    		</h5>
 		    	</li>
 		    	<li class="border-right">
-		    		<span class="lnr lnr-leaf"></span>
+		    		<span class="lnr lnr-dinner"></span>
 		    		<h5>
 		    			Fresh Food
 		    		</h5>
