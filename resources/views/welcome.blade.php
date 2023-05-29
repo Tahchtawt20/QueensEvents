@@ -9,7 +9,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Resto - Restaurant Bootstrap 4 Template by GetTemplates.co</title>
+    <title>Queens Events</title>
     <meta name="description" content="Resto">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -33,6 +33,7 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
 
 </head>
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
@@ -79,7 +80,7 @@
 
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav d-flex justify-content-between">
-                <li class="nav-item only-desktop">
+                <li class="nav-item only-desktop menu-button">
                     <a class="nav-link" id="side-nav-open" href="#">
                         <span class="lnr lnr-menu"></span>
                     </a>
@@ -120,11 +121,6 @@
                         <a class="nav-link" href={{route("reservation")}}>Reservation</a>
                     </li>
                 </div>
-                <li class="nav-item">
-                    <a id="side-search-open" class="nav-link" href="#">
-                        <span class="lnr lnr-magnifier"></span>
-                    </a>
-                </li>
             </ul>
         </div>
     </div>
@@ -135,10 +131,10 @@
 		    <h1 class="display-4 mb-5">We Love <br>Delicious Foods!</h1>
 		    <div class="mb-2">
 		    	<a class="btn btn-primary btn-shadow btn-lg" href="#" role="button">Explore Menu</a>
-			    <a class="btn btn-icon btn-lg" href="https://player.vimeo.com/video/33110953" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true">
+			    <a class="btn btn-icon btn-lg" href="https://youtu.be/csz_UswEe8c">
 			    	<span class="lnr lnr-film-play"></span>
 			    	Play Video
-			    </a>
+                </a>
 		    </div>
 		   
 		    <ul class="hero-info list-unstyled d-flex text-center mb-0">
@@ -166,13 +162,13 @@
 	    <div class="col-lg-6 hero-right">
 	    	<div class="owl-carousel owl-theme hero-carousel">
 			    <div class="item">
-			    	<img class="img-fluid" src="{{asset('hero-1.jpg')}}" alt="">
+			    	<img class="img-fluid" src="{{asset('my-hero-1.jpeg')}}" alt="">
 			    </div>
 			    <div class="item">
-			    	<img class="img-fluid" src="{{asset('hero-2.jpg')}}" alt="">
+			    	<img class="img-fluid" src="{{asset('my-hero-2.jpeg')}}" alt="">
 			    </div>
 			    <div class="item">
-			    	<img class="img-fluid" src="{{asset('hero-3.jpg')}}" alt="">
+			    	<img class="img-fluid" src="{{asset('my-hero-3.jpeg')}}" alt="">
 			    </div>
 			</div>
 	    </div>
