@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<!--
-	Resto by GetTemplates.co
-	URL: https://gettemplates.co
--->
 <html lang="en">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Resto - Restaurant Bootstrap 4 Template by GetTemplates.co</title>
+    <title>Queens Events</title>
     <meta name="description" content="Resto">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -70,7 +66,7 @@
 		<nav id="navbar-header" class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="/">
-            <img src={{asset("logo.png")}} alt="">
+            <img src={{asset("my-logo1.png")}} alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
@@ -78,7 +74,7 @@
 
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav d-flex justify-content-between">
-                <li class="nav-item only-desktop">
+                <li class="nav-item only-desktop menu-button">
                     <a class="nav-link" id="side-nav-open" href="#">
                         <span class="lnr lnr-menu"></span>
                     </a>
@@ -104,7 +100,7 @@
             </ul>
             
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
-                <img src={{asset("logo.png")}} alt="">
+                <img src={{asset("my-logo1.png")}} alt="">
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
@@ -119,11 +115,6 @@
                         <a class="nav-link" href={{route('reservation')}}>Reservation</a>
                     </li>
                 </div>
-                <li class="nav-item">
-                    <a id="side-search-open" class="nav-link" href="#">
-                        <span class="lnr lnr-magnifier"></span>
-                    </a>
-                </li>
             </ul>
         </div>
     </div>
@@ -314,7 +305,7 @@
          <div class="row">
          	<div class="col-lg-4">
          		<div class="footer-widget pr-lg-5 pr-0">
-         			<img src={{asset("logo.png")}} class="img-fluid footer-logo mb-3" alt="">
+         			<img src={{asset("my-logo1.png")}} class="img-fluid footer-logo mb-3" alt="">
 	         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi? Magni, et voluptatum dolorem.</p>
 	         		<nav class="nav nav-mastfoot justify-content-start">
 		                <a class="nav-link" href="#">

@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Resto by GetTemplates.co
-	URL: https://gettemplates.co
--->
 <html lang="en">
 
 <head>
@@ -72,7 +68,7 @@
 		<nav id="navbar-header" class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="/">
-            <img src="{{asset('logo.png')}}" alt="">
+            <img src="{{asset('my-logo1.png')}}" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
@@ -106,7 +102,7 @@
             </ul>
             
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
-                <img src="{{asset('logo.png')}}" alt="">
+                <img src="{{asset('my-logo1.png')}}" alt="">
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
@@ -665,7 +661,7 @@
          <div class="row">
          	<div class="col-lg-4">
          		<div class="footer-widget pr-lg-5 pr-0">
-         			<img src="{{asset('logo.png')}}" class="img-fluid footer-logo mb-3" alt="">
+         			<img src="{{asset('my-logo1.png')}}" class="img-fluid footer-my-logo mb-3" alt="">
 	         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi? Magni, et voluptatum dolorem.</p>
 	         		<nav class="nav nav-mastfoot justify-content-start">
 		                <a class="nav-link" href="#">
