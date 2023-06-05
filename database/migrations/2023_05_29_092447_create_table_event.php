@@ -20,6 +20,8 @@ return new class extends Migration
             $table->time('time_event');
             $table->unsignedBigInteger('id_type');
             $table->foreign('id_type')->references('id')->on('event_type')->onUpdate('cascade')->onDelete('cascade');
+            $table->unsignedBigInteger('id_user');
+            $table->foreign('id_user')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('table_event');
+        Schema::dropIfExists('event');
     }
 };

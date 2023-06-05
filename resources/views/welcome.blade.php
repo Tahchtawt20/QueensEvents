@@ -114,7 +114,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href={{route("reservation")}}>Reservation</a>
+                        <a class="nav-link" href={{route("register")}}>Reservation</a>
                     </li>
                 </div>
             </ul>
@@ -156,6 +156,27 @@
 
 	    </div>
 	    <div class="col-lg-6 hero-right">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{asset('my-hero-1.jpeg')}}" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{{asset('my-hero-2.png')}}" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{{asset('my-hero-3.png')}}" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
 	    	<div class="owl-carousel owl-theme hero-carousel">
 			    <div class="item">
 			    	<img class="img-fluid" src="{{asset('my-hero-1.jpeg')}}" alt="">
@@ -168,6 +189,7 @@
 			    </div>
 			</div>
 	    </div>
+        
 	</div>
   </div>
 </div>		<!-- Welcome Section -->
