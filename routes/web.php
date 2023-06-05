@@ -19,3 +19,7 @@ Route::view('/menu', ('menu'))->name('menu');
 Route::view('/reservation', ('reservation'))->name('reservation');
 Route::view('/special', ('special'))->name('special');
 Route::view('/team', ('team'))->name('team');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
