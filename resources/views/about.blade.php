@@ -33,7 +33,7 @@
 <body data-spy="scroll" data-target="#navbar">
 	<div id="side-nav" class="sidenav">
 	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
-	
+
 	<div class="sidenav-content">
 		<p>
 			Kuncen WB1, Wirobrajan 10010, DIY
@@ -59,8 +59,8 @@
 
 		</form>
 	</div>
-	
- 	
+
+
 </div>	<div id="canvas-overlay"></div>
 	<div class="boxed-page">
 		<nav id="navbar-header" class="navbar navbar-expand-lg">
@@ -98,7 +98,7 @@
                     </li>
                 </div>
             </ul>
-            
+
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
                 <img src={{asset("my-logo1.png")}} alt="">
             </a>
@@ -123,16 +123,14 @@
     <div class="container">
         <div class="section-content">
             <div class="row">
-                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image: url(././hero-2.jpg);">
-                    
+                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image: url(././pic1.jpg);">
+
                 </div>
                 <div class="col-sm-7 py-5 pl-md-0 pl-4">
                     <div class="heading-section pl-lg-5 ml-md-5">
-                        <span class="subheading">
-                            About
-                        </span>
+                       
                         <h2>
-                            Welcome to Resto
+                            Welcome to QueensEvents
                         </h2>
                     </div>
                     <div class="pl-lg-5 ml-md-5">
@@ -141,20 +139,20 @@
                         <div class="row">
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src={{asset("hero-1.jpg")}} />
-                                    <h6>Australian Organic Beef</h6>
+                                    <img class="img-fluid img-cover" src={{asset("pic2.jpg")}} />
+                                    <h6>Birthday</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src={{asset("hero-1.jpg")}} />
-                                    <h6>Australian Organic Beef</h6>
+                                    <img class="img-fluid img-cover" src={{asset("pic3.jpg")}} />
+                                    <h6>circumcision</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src={{asset("hero-1.jpg")}} />
-                                    <h6>Australian Organic Beef</h6>
+                                    <img class="img-fluid img-cover" src={{asset("pic4.jpg")}} />
+                                    <h6>babyshower</h6>
                                 </a>
                             </div>
                         </div>
@@ -183,7 +181,7 @@
 		                </a>
 		            </nav>
          		</div>
-         		
+
          	</div>
          	<div class="col-lg-4">
          		<div class="footer-widget px-lg-5 px-0">
@@ -198,7 +196,7 @@
 		                <li class="d-flex justify-content-between"><span>Sunday</span><span> Closed</span></li>
 		              </ul>
          		</div>
-         		
+
          	</div>
 
          	<div class="col-lg-4">
@@ -212,16 +210,16 @@
 						<button type="submit" class="btn btn-primary w-100">Submit</button>
 					</form>
          		</div>
-         		
+
          	</div>
          	<div class="col-md-12 d-flex align-items-center">
          		<p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
          	</div>
-            
+
         </div>
     </div>
 </footer>	</div>
-	
+
 </div>
 	<!-- External JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -11,3 +11,6 @@ class event extends Model
     protected $table ='event';
 
 }
+
+
+

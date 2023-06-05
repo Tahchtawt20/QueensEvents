@@ -33,7 +33,7 @@
 <body data-spy="scroll" data-target="#navbar">
 	<div id="side-nav" class="sidenav">
 	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
-	
+
 	<div class="sidenav-content">
 		<p>
 			Kuncen WB1, Wirobrajan 10010, DIY
@@ -59,8 +59,8 @@
 
 		</form>
 	</div>
-	
- 	
+
+
 </div>	<div id="canvas-overlay"></div>
 	<div class="boxed-page">
 		<nav id="navbar-header" class="navbar navbar-expand-lg">
@@ -98,7 +98,7 @@
                     </li>
                 </div>
             </ul>
-            
+
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
                 <img src={{asset("my-logo1.png")}} alt="">
             </a>
@@ -129,9 +129,9 @@
                             Specialties
                         </span>
                         <h2>
-                            Our Menu
+                            Our themes
                         </h2>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -319,7 +319,7 @@
 		                </a>
 		            </nav>
          		</div>
-         		
+
          	</div>
          	<div class="col-lg-4">
          		<div class="footer-widget px-lg-5 px-0">
@@ -334,7 +334,7 @@
 		                <li class="d-flex justify-content-between"><span>Sunday</span><span> Closed</span></li>
 		              </ul>
          		</div>
-         		
+
          	</div>
 
          	<div class="col-lg-4">
@@ -348,16 +348,16 @@
 						<button type="submit" class="btn btn-primary w-100">Submit</button>
 					</form>
          		</div>
-         		
+
          	</div>
          	<div class="col-md-12 d-flex align-items-center">
          		<p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
          	</div>
-            
+
         </div>
     </div>
 </footer>	</div>
-	
+
 </div>
 	<!-- External JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

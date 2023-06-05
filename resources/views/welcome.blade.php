@@ -35,7 +35,7 @@
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
 	<div id="side-nav" class="sidenav">
 	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
-	
+
 	<div class="sidenav-content">
 		<p>
 			Kuncen WB1, Wirobrajan 10010, DIY
@@ -61,8 +61,8 @@
 
 		</form>
 	</div>
-	
- 	
+
+
 </div>	<div id="canvas-overlay"></div>
 	<div class="boxed-page">
 		<nav id="navbar-header" class="navbar navbar-expand-lg">
@@ -100,7 +100,7 @@
                     </li>
                 </div>
             </ul>
-            
+
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
                 <img src="{{asset('my-logo1.png')}}" alt="">
             </a>
@@ -132,7 +132,7 @@
 			    	Play Video
                 </a>
 		    </div>
-		   
+
 		    <ul class="hero-info list-unstyled d-flex text-center mb-0">
 		    	<li class="border-right">
 		    		<span class="lnr lnr-magic-wand"></span>
@@ -175,16 +175,14 @@
     <div class="container">
         <div class="section-content">
             <div class="row">
-                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image:  url('{{ asset('hero-2.jpg')}}');">
-                    
+                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image:  url('{{ asset('pic1.jpg')}}');">
+
                 </div>
                 <div class="col-sm-7 py-5 pl-md-0 pl-4">
                     <div class="heading-section pl-lg-5 ml-md-5">
-                        <span class="subheading">
-                            About
-                        </span>
+
                         <h2>
-                            Welcome to Resto
+                            Welcome to QueensEvents
                         </h2>
                     </div>
                     <div class="pl-lg-5 ml-md-5">
@@ -193,20 +191,20 @@
                         <div class="row">
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="{{asset('hero-1.jpg')}}" />
-                                    <h6>Australian Organic Beef</h6>
+                                    <img class="img-fluid img-cover" src="{{asset('pic2.jpg')}}" />
+                                    <h6>Birthday</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="{{asset('hero-1.jpg')}}" />
-                                    <h6>Australian Organic Beef</h6>
+                                    <img class="img-fluid img-cover" src="{{asset('pic3.jpg')}}" />
+                                    <h6>circumcision</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="{{asset('hero-1.jpg')}}"/>
-                                    <h6>Australian Organic Beef</h6>
+                                    <img class="img-fluid img-cover" src="{{asset('pic4.jpg')}}"/>
+                                    <h6>Babyshower</h6>
                                 </a>
                             </div>
                         </div>
@@ -221,9 +219,7 @@
     <div class="container">
         <div class="section-content">
             <div class="heading-section text-center">
-                <span class="subheading">
-                    Specialties
-                </span>
+
                 <h2>
                     Special Dishes
                 </h2>
@@ -239,12 +235,12 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
-                    <img src="{{asset('steak.jpg')}}" alt="" class="img-fluid shadow w-100">
+                    <img src="{{asset('pic5.jpg')}}" alt="" class="img-fluid shadow w-100">
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
-                    <img src="{{asset('salmon-zucchini.jpg')}}" alt="" class="img-fluid shadow w-100">
+                    <img src="{{asset('pic10.jpg')}}" alt="" class="img-fluid shadow w-100">
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
                     <h2 class="special-number">02.</h2>
@@ -254,6 +250,20 @@
                         <h3 class="special-dishes-price">$12.00</h3>
                         <a href="#" class="btn-primary mt-3">book a table <span><i class="fa fa-long-arrow-right"></i></span></a>
                     </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">03.</h2>
+                    <div class="dishes-text">
+                        <h3><span>Beef</span><br> Steak Sauce</h3>
+                        <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt provident libero qui eum, corporis esse quos excepturi soluta?</p>
+                        <h3 class="special-dishes-price">$15.00</h3>
+                        <a href="#" class="btn-primary mt-3">book a table</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="{{asset('pic14.jpg')}}" alt="" class="img-fluid shadow w-100">
                 </div>
             </div>
         </div>
@@ -272,7 +282,7 @@
                         <h2>
                             Our Menu
                         </h2>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -641,7 +651,7 @@
                                     <option>5</option>
                                 </select>
                             </div>
-                 
+
                             <div class="col-md-12 form-group">
                                 <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
                             </div>
@@ -653,7 +663,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 </section>
 <!-- End of Reservation Section -->		<footer class="mastfoot pb-5 bg-white section-padding pb-0">
@@ -675,7 +685,7 @@
 		                </a>
 		            </nav>
          		</div>
-         		
+
          	</div>
          	<div class="col-lg-4">
          		<div class="footer-widget px-lg-5 px-0">
@@ -690,7 +700,7 @@
 		                <li class="d-flex justify-content-between"><span>Sunday</span><span> Closed</span></li>
 		              </ul>
          		</div>
-         		
+
          	</div>
 
          	<div class="col-lg-4">
@@ -704,12 +714,12 @@
 						<button type="submit" class="btn btn-primary w-100">Submit</button>
 					</form>
          		</div>
-         		
+
          	</div>
          	<div class="col-md-12 d-flex align-items-center">
          		<p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
          	</div>
-            
+
         </div>
     </div>
 </footer>	</div>
