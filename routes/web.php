@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('welcome');
 Route::view('/about', ('about'))->name('about');
-Route::view('/menu', ('menu'))->name('menu');
+Route::view('/theme', ('theme'))->name('theme');
 Route::view('/reservation', ('reservation'))->name('reservation');
 Route::view('/special', ('special'))->name('special');
 Route::view('/team', ('team'))->name('team');
