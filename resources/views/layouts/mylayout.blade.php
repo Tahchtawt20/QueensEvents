@@ -121,6 +121,8 @@
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('Reservation') }}</a>
+                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('My Events') }}</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                                  document.getElementById('logout-form').submit();">
@@ -131,7 +133,6 @@
                                             class="d-none">
                                             @csrf
                                         </form>
-                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('Reservation') }}</a>
                                     </div>
                                 </li>
                             @endguest

@@ -16,18 +16,21 @@
                         </div>
                         <form method="post" name="contact-us" action="">
                             <div class="row">
+
                                 <div class="col-md-12 form-group">
-                                    <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="{{ __('Name') }}">
+                                    <select class="form-control" id="selectPerson">
+                                        <option selected disabled>choose an event </option>
+                                        <option>event 1</option>
+                                    </select>
                                 </div>
+
                                 <div class="col-md-12 form-group">
-                                    <input type="text" class="form-control" id="email" name="email"
-                                        placeholder="Email">
+                                    <select class="form-control" id="selectPerson">
+                                        <option selected disabled>choose a theme</option>
+                                        <option>theme 1</option>
+                                    </select>
                                 </div>
-                                <div class="col-md-12 form-group">
-                                    <input type="number" class="form-control" id="phoneNumber" name="phoneNumber"
-                                        placeholder="{{ __('Phone') }}">
-                                </div>
+
                                 <div class="col-md-6 form-group">
                                     <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
@@ -54,23 +57,12 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-12 form-group">
-                                    <select class="form-control" id="selectPerson">
-                                        <option></option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
 
                                 <div class="col-md-12 form-group">
                                     <textarea class="form-control" id="message" name="message" rows="6" placeholder="Extra informations ... "></textarea>
                                 </div>
                                 <div class="col-md-12 text-center">
-                                    <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send
-                                        Message</button>
+                                    <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">{{ __('Create event') }}</button>
                                 </div>
                             </div>
                         </form>
