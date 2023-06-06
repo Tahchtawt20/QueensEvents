@@ -101,7 +101,7 @@
                     <ul class="navbar-nav d-flex justify-content-between">
                         <div class="d-flex flex-lg-row flex-column">
                             <li class="nav-item active">
-                                <a class="nav-link" href={{ route('menu') }}>Menu</a>
+                                <a class="nav-link" href={{ route('theme') }}>Theme</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href={{ route('team') }}>Team</a>
