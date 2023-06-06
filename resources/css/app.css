@@ -109,7 +109,7 @@ a:hover {
 }
 
 .navbar-brand-center img {
-  height: 50px;
+  height: 60px;
 }
 
 .footer-logo {
@@ -225,7 +225,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  opacity: 0.6 ;
+  opacity: 0.6;
 }
 
 .hero-carousel .owl-prev {
