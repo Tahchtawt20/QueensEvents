@@ -376,32 +376,45 @@
     <div class="container">
         <div class="section-content">
             <div class="heading-section text-center">
-                <span class="subheading">
-                    Testimony
-                </span>
-                <h2>
+               <h2>
                     Happy Customer
                 </h2>
             </div>
             <div class="row">
                 <!-- Testimonial -->
 
-                <div class="testi-content testi-carousel owl-carousel">
-                    <div class="testi-item">
-                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <p class="testi-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                            officia deserunt mollit anim id est laborum.</p>
-                        <p class="testi-author">John Doe</p>
-                        <p class="testi-desc">CEO of <span>GetTemplates</span></p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">  
+                    <!-- Slides -->
+                    <div class="carousel-inner testi-carousel testi-content">
+                      <div class="carousel-item active">
+                        <div class="testi-item">
+                          <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                          <p class="testi-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <p class="testi-author">John Doe</p>
+                          <p class="testi-desc">CEO of <span>GetTemplates</span></p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="testi-item">
+                          <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                          <p class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci non doloribus ut, alias doloremque perspiciatis.</p>
+                          <p class="testi-author">Mary Jane</p>
+                          <p class="testi-desc">CTO of <span>Unidentity Inc</span></p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="testi-item">
-                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <p class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci non
-                            doloribus ut, alias doloremque perspiciatis.</p>
-                        <p class="testi-author">Mary Jane</p>
-                        <p class="testi-desc">CTO of <span>Unidentity Inc</span></p>
-                    </div>
-                </div>
+                  
+                    <!-- Navigation -->
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  
                 <!-- End of Testimonial -->
             </div>
         </div>

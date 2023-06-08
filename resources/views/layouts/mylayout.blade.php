@@ -124,6 +124,7 @@
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('Reservation') }}</a>
                                         <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('My Events') }}</a>
+                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('My Account') }}</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                                  document.getElementById('logout-form').submit();">
@@ -209,8 +210,7 @@
 
                     </div>
                     <div class="col-md-12 d-flex align-items-center">
-                        <p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a
-                                href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
+                        <p class="mx-auto text-center mb-0">&copy; Copyright 2023 QueensEvents . All Rights Reserved</p>
                     </div>
 
                 </div>
