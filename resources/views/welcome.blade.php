@@ -96,24 +96,24 @@
                             safe country. A small river named Duden flows by their place and supplies it with the
                             necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
                             fly into your mouth.</p>
-                        <h3 class="mt-5">Special Recipe</h3>
+                        <h3 class="mt-5" style="color:#f34949 ">{{ __('Events') }}</h3>
                         <div class="row">
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
                                     <img class="img-fluid img-cover" src="{{ asset('pic2.jpg') }}" />
-                                    <h6>Birthday</h6>
+                                    <h6 style="color:black">Birthday</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
                                     <img class="img-fluid img-cover" src="{{ asset('pic3.jpg') }}" />
-                                    <h6>circumcision</h6>
+                                    <h6 style="color:black">Circumcision</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
                                     <img class="img-fluid img-cover" src="{{ asset('pic4.jpg') }}" />
-                                    <h6>Babyshower</h6>
+                                    <h6 style="color:black">Gender reveal</h6>
                                 </a>
                             </div>
                         </div>
@@ -385,6 +385,7 @@
             </div>
             <div class="row">
                 <!-- Testimonial -->
+
                 <div class="testi-content testi-carousel owl-carousel">
                     <div class="testi-item">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
