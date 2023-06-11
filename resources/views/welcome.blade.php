@@ -101,7 +101,7 @@
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
                                     <img class="img-fluid img-cover" src="{{ asset('pic2.jpg') }}" />
-                                    <h6 style="color:black">Birthday</h6>
+                                    <h6 style="color:black">{{ __('Birthday') }}</h6>
                                 </a>
                             </div>
                             <div class="col-4">
@@ -391,7 +391,7 @@
                           <i class="testi-icon fa fa-3x fa-quote-left"></i>
                           <p class="testi-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                           <p class="testi-author">John Doe</p>
-                          <p class="testi-desc">CEO of <span>GetTemplates</span></p>
+                          <p class="testi-desc">CEO of <span>Lorem ipsum</span></p>
                         </div>
                       </div>
                       <div class="carousel-item">
