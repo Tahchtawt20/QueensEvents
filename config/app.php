@@ -95,6 +95,10 @@ return [
     | the language folders that are provided through your application.
     |
     */
+    'languages'=>[
+        'en'=>'English',
+        'fr'=>'Français',
+    ],
 
     'fallback_locale' => 'en',
 

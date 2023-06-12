@@ -101,7 +101,7 @@
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
                                     <img class="img-fluid img-cover" src="{{ asset('pic2.jpg') }}" />
-                                    <h6 style="color:black">{{ __('Birthday') }}</h6>
+                                    <h6 style="color:black">{{ __('messages.birthday') }}</h6>
                                 </a>
                             </div>
                             <div class="col-4">

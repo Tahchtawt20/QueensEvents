@@ -24,3 +24,6 @@ Route::view('/team', ('team'))->name('team');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('lang/{lang}',[
+    'uses'=>'App\Http\Controllers\LocalizationController@switchLang',
+])->name('lang');
