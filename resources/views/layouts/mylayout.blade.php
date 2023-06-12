@@ -58,7 +58,7 @@
     <div class="boxed-page">
         <nav id="navbar-header" class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="/">
+                <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="{{ route('welcome') }}">
                     <img src="{{ asset('Queens.png') }}" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -89,22 +89,22 @@
                         </div>
                     </ul>
 
-                    <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
+                    <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="{{route('welcome') }}">
                         <img src="{{ asset('Queens.png') }}" alt="">
                     </a>
                     <ul class="navbar-nav d-flex justify-content-between">
                         <div class="d-flex flex-lg-row flex-column">
                             <li class="nav-item active">
-                                <a class="nav-link" href={{ route('theme') }}>Theme</a>
+                                <a class="nav-link" href={{ route('theme') }}>{{ __('messages.theme')  }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href={{ route('team') }}>Team</a>
+                                <a class="nav-link" href={{ route('team') }}>{{ __('messages.team')  }}</a>
                             </li>
                             <!-- Authentication Links -->
                             @guest
                                 @if (Route::has('login'))
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                        <a class="nav-link" href="{{ route('login') }}">{{ __('messages.login') }}</a>
                                     </li>
                                 @endif
                             @else
@@ -115,13 +115,13 @@
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('Reservation') }}</a>
-                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('My Events') }}</a>
-                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('My Account') }}</a>
+                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.reservation') }}</a>
+                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.myevents') }}</a>
+                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.account') }}</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                                  document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
+                                            {{ __('messages.logout') }}
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST"
@@ -134,7 +134,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href={{ route('special') }} id="navbarDropdown"
                                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    {{ __('Language') }}
+                                    {{ __('messages.lang') }}
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('lang', ['lang' => 'en']) }}"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 2.511719 6.402344 L 27.191406 6.402344 L 27.191406 24.546875 L 2.511719 24.546875 Z M 2.511719 6.402344 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#id1)"><path fill="rgb(0%, 14.118958%, 49.01886%)" d="M 2.519531 9.234375 L 2.519531 11.984375 L 6.375 11.984375 Z M 5.714844 24.546875 L 11.425781 24.546875 L 11.425781 20.472656 Z M 18.277344 20.472656 L 18.277344 24.546875 L 23.984375 24.546875 Z M 2.519531 18.964844 L 2.519531 21.714844 L 6.378906 18.964844 Z M 23.988281 6.402344 L 18.277344 6.402344 L 18.277344 10.472656 Z M 27.183594 21.714844 L 27.183594 18.964844 L 23.324219 18.964844 Z M 27.183594 11.984375 L 27.183594 9.234375 L 23.324219 11.984375 Z M 11.425781 6.402344 L 5.714844 6.402344 L 11.425781 10.472656 Z M 11.425781 6.402344 " fill-opacity="1" fill-rule="nonzero"/><path fill="rgb(81.17981%, 10.5896%, 16.859436%)" d="M 19.742188 18.964844 L 26.394531 23.710938 C 26.71875 23.375 26.949219 22.953125 27.074219 22.488281 L 22.132812 18.964844 Z M 11.425781 18.964844 L 9.960938 18.964844 L 3.304688 23.707031 C 3.664062 24.078125 4.121094 24.34375 4.632812 24.464844 L 11.425781 19.621094 Z M 18.277344 11.984375 L 19.742188 11.984375 L 26.394531 7.238281 C 26.039062 6.867188 25.582031 6.605469 25.070312 6.480469 L 18.277344 11.324219 Z M 9.960938 11.984375 L 3.304688 7.238281 C 2.984375 7.574219 2.753906 7.992188 2.628906 8.460938 L 7.570312 11.984375 Z M 9.960938 11.984375 " fill-opacity="1" fill-rule="nonzero"/><path fill="rgb(93.328857%, 93.328857%, 93.328857%)" d="M 27.183594 17.566406 L 16.90625 17.566406 L 16.90625 24.546875 L 18.277344 24.546875 L 18.277344 20.472656 L 23.984375 24.546875 L 24.441406 24.546875 C 25.207031 24.546875 25.898438 24.222656 26.394531 23.710938 L 19.742188 18.964844 L 22.132812 18.964844 L 27.074219 22.488281 C 27.136719 22.253906 27.183594 22.011719 27.183594 21.753906 L 27.183594 21.714844 L 23.324219 18.964844 L 27.183594 18.964844 Z M 2.519531 17.566406 L 2.519531 18.964844 L 6.378906 18.964844 L 2.519531 21.714844 L 2.519531 21.753906 C 2.519531 22.515625 2.820312 23.203125 3.304688 23.707031 L 9.960938 18.964844 L 11.425781 18.964844 L 11.425781 19.621094 L 4.632812 24.464844 C 4.835938 24.515625 5.042969 24.546875 5.261719 24.546875 L 5.714844 24.546875 L 11.425781 20.472656 L 11.425781 24.546875 L 12.796875 24.546875 L 12.796875 17.566406 Z M 27.183594 9.191406 C 27.183594 8.429688 26.882812 7.742188 26.394531 7.238281 L 19.742188 11.984375 L 18.277344 11.984375 L 18.277344 11.324219 L 25.070312 6.480469 C 24.867188 6.433594 24.660156 6.402344 24.441406 6.402344 L 23.988281 6.402344 L 18.277344 10.472656 L 18.277344 6.402344 L 16.90625 6.402344 L 16.90625 13.378906 L 27.183594 13.378906 L 27.183594 11.984375 L 23.324219 11.984375 L 27.183594 9.234375 Z M 11.425781 6.402344 L 11.425781 10.472656 L 5.714844 6.402344 L 5.261719 6.402344 C 4.496094 6.402344 3.804688 6.722656 3.304688 7.238281 L 9.960938 11.984375 L 7.570312 11.984375 L 2.628906 8.460938 C 2.566406 8.695312 2.519531 8.9375 2.519531 9.191406 L 2.519531 9.234375 L 6.375 11.984375 L 2.519531 11.984375 L 2.519531 13.378906 L 12.796875 13.378906 L 12.796875 6.402344 Z M 11.425781 6.402344 " fill-opacity="1" fill-rule="nonzero"/><path fill="rgb(81.17981%, 10.5896%, 16.859436%)" d="M 16.90625 13.378906 L 16.90625 6.402344 L 12.796875 6.402344 L 12.796875 13.378906 L 2.519531 13.378906 L 2.519531 17.566406 L 12.796875 17.566406 L 12.796875 24.546875 L 16.90625 24.546875 L 16.90625 17.566406 L 27.183594 17.566406 L 27.183594 13.378906 Z M 16.90625 13.378906 " fill-opacity="1" fill-rule="nonzero"/></g></svg> English</a>
@@ -157,9 +157,7 @@
                             <img src="{{ asset('my-logo1.png') }}" class="img-fluid footer-my-logo mb-3"
                                 alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit
-                                omnis
-                                explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi?
-                                Magni, et
+                                omnis, et
                                 voluptatum dolorem.</p>
                             <nav class="nav nav-mastfoot justify-content-start">
                                 <a class="nav-link" href="#">
@@ -177,7 +175,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="footer-widget px-lg-5 px-0">
-                            <h4>Open Hours</h4>
+                            <h4>{{ __('messages.hours') }}</h4>
                             <ul class="list-unstyled open-hours">
                                 <li class="d-flex justify-content-between"><span>Monday</span><span>9:00 - 24:00</span>
                                 </li>
@@ -205,15 +203,15 @@
                             <form id="newsletter">
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="emailNewsletter"
-                                        aria-describedby="emailNewsletter" placeholder="Enter email">
+                                        aria-describedby="emailNewsletter" placeholder="{{ __('messages.enterMail') }}">
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                                <button type="submit" class="btn btn-primary w-100">{{ __('messages.submit') }}</button>
                             </form>
                         </div>
 
                     </div>
                     <div class="col-md-12 d-flex align-items-center">
-                        <p class="mx-auto text-center mb-0">&copy; Copyright 2023 QueensEvents . All Rights Reserved</p>
+                        <p class="mx-auto text-center mb-0">&copy; Copyright 2023 QueensEvents . {{ __('messages.rights') }}</p>
                     </div>
 
                 </div>

@@ -7,7 +7,7 @@
         <div class="section-content">
             <div class="heading-section text-center">
                 <h2>
-                    Our Team
+                    {{ __('messages.ourTeam') }}
                 </h2>
             </div>
             <div class="row">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="{{ asset('pic22.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('negafa.jpg') }}" alt="">
                         <div class="team-desc">
                             <h4 class="mb-0">Majda Benjelloun</h4>
                             <p class="mb-1">Negafa</p>
