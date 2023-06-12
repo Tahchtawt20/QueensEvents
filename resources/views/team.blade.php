@@ -6,9 +6,6 @@
     <div class="container">
         <div class="section-content">
             <div class="heading-section text-center">
-                <span class="subheading">
-                    Specialties
-                </span>
                 <h2>
                     Our Team
                 </h2>
@@ -16,10 +13,10 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src={{asset("chef-1.jpg")}} alt="">
+                        <img class="img-fluid" src="{{ asset('pic24.jpg') }}" alt="">
                         <div class="team-desc">
-                            <h4 class="mb-0">Aaron Patel</h4>
-                            <p class="mb-1">CEO</p>
+                            <h4 class="mb-0">Mohamed Yichrak</h4>
+                            <p class="mb-1">{{__('messages.groupe')}}</p>
                             <ul class="list-inline mb-0 team-social-links">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -47,10 +44,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src={{asset("chef-2.jpg")}} alt="">
+                        <img class="img-fluid" src="{{ asset('pic22.jpg') }}" alt="">
                         <div class="team-desc">
-                            <h4 class="mb-0">Daniel Tebas</h4>
-                            <p class="mb-1">Chef</p>
+                            <h4 class="mb-0">Majda Benjelloun</h4>
+                            <p class="mb-1">Negafa</p>
                             <ul class="list-inline mb-0 team-social-links">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -78,9 +75,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src={{asset("chef-3.jpg")}} alt="">
+                        <img class="img-fluid" src="{{ asset('pic19.jpg') }}" alt="">
                         <div class="team-desc">
-                            <h4 class="mb-0">Jon Snow</h4>
+                            <h4 class="mb-0">Chef Moha</h4>
                             <p class="mb-1">Chef</p>
                             <ul class="list-inline mb-0 team-social-links">
                                 <li class="list-inline-item">
