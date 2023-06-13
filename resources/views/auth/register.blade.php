@@ -5,15 +5,13 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Register') }}</div>
-
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
 
                             <div class="row mb-3">
                                 <label for="name"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('messages.name') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="name" type="text"
@@ -30,7 +28,7 @@
 
                             <div class="row mb-3">
                                 <label for="email"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('messages.email') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="email" type="email"
@@ -47,12 +45,12 @@
 
                             <div class="row mb-3">
                                 <label for="telephone"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Phone Number') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('messages.phone') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="telephone" type="tel"
                                         class="form-control @error('telephone') is-invalid @enderror" name="telephone"
-                                        value="{{ old('email') }}" required autocomplete="telephone" maxlength="10"
+                                        value="{{ old('telephone') }}" required autocomplete="telephone" maxlength="10"
                                         >
 
                                     @error('telephone')
@@ -65,7 +63,7 @@
 
                             <div class="row mb-3">
                                 <label for="password"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('messages.password') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="password" type="password"
@@ -82,7 +80,7 @@
 
                             <div class="row mb-3">
                                 <label for="password-confirm"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('messages.confirm') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control"
@@ -93,7 +91,7 @@
                             <div class="row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('Register') }}
+                                        {{ __('messages.register') }}
                                     </button>
                                 </div>
                             </div>

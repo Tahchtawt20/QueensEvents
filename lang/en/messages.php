@@ -20,6 +20,7 @@ return[
     'food'=>'Fresh Food',
     'welcome'=>'Welcome to QueensEvents',
     'events'=>'Events',
+    'myevents'=>'My Events',
     'circumcision'=>'Circumcision',
     'gender'=>'Gender Reveal',
     'more'=>'And More ...',
@@ -29,5 +30,17 @@ return[
     'submit'=>'Submit',
     'groupe'=>'Musical Group',
     'hours'=>'Active Hours',
-    'ourTeam'=>'Our Team'
+    'ourTeam'=>'Our Team',
+    'ourThemes'=>'Our Themes',
+    'notHaveAccount'=>'You don\'t have an account?',
+    'email'=>'Email Address',
+    'password'=>'Password',
+    'name'=>'Name',
+    'phone'=>'Phone Number',
+    'confirm'=>'Confirm Password',
+    'register'=>'Register',
+    'afterLogin1'=>'Welcome ',
+    'afterLogin2'=>' . You have successfully logged in !',
+    'days'=>['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+    'closed'=>'Closed'
 ];
