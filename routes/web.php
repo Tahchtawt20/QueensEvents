@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Client\ClientController ;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome')->name('welcome');
 Route::view('/about', ('about'))->name('about');
 Route::view('/theme', ('theme'))->name('theme');
-Route::view('/reservation', ('reservation'))->name('reservation');
+
+Route::get('/reservation', [ClientController::class ,'create' ])->name('reservation');
 Route::view('/special', ('special'))->name('special');
 Route::view('/team', ('team'))->name('team');
+Route::post('/reservation' , [ClientController::class ,'store'])->name('storeRes');
 
 Auth::routes();
 
