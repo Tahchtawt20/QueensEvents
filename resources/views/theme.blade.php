@@ -7,11 +7,8 @@
             <div class="row mb-5">
                 <div class="col-md-12">
                     <div class="heading-section text-center">
-                        <span class="subheading">
-                            Specialties
-                        </span>
                         <h2>
-                            Our themes
+                            {{ __('messages.ourThemes') }}
                         </h2>
                     </div>
                 </div>
@@ -19,7 +16,7 @@
             <div class="row">
                 <div class="col-lg-4 menu-wrap">
                     <div class="heading-menu">
-                        <h3 class="text-center mb-5">Breakfast</h3>
+                        <h3 class="text-center mb-5"  style="color:#f34949 ">Breakfast</h3>
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
@@ -73,7 +70,7 @@
 
                 <div class="col-lg-4 menu-wrap">
                     <div class="heading-menu">
-                        <h3 class="text-center mb-5">Breakfast</h3>
+                        <h3 class="text-center mb-5" style="color:#f34949 ">Breakfast</h3>
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
@@ -127,7 +124,7 @@
 
                 <div class="col-lg-4 menu-wrap">
                     <div class="heading-menu">
-                        <h3 class="text-center mb-5">Breakfast</h3>
+                        <h3 class="text-center mb-5" style="color:#f34949 ">Breakfast</h3>
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">

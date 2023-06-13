@@ -115,8 +115,12 @@
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        @if (Auth::user()->role=='client')
                                         <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.reservation') }}</a>
                                         <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.myevents') }}</a>
+                                        @else
+                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.reservation') }}s</a>
+                                        @endif
                                         <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.account') }}</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -160,13 +164,13 @@
                                 omnis, et
                                 voluptatum dolorem.</p>
                             <nav class="nav nav-mastfoot justify-content-start">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="https://www.facebook.com">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="https://www.twitter.com">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="https://www.instagram.com">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </nav>
@@ -177,20 +181,20 @@
                         <div class="footer-widget px-lg-5 px-0">
                             <h4>{{ __('messages.hours') }}</h4>
                             <ul class="list-unstyled open-hours">
-                                <li class="d-flex justify-content-between"><span>Monday</span><span>9:00 - 24:00</span>
+                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.0') }}</span><span>9:00 - 20:00</span>
                                 </li>
-                                <li class="d-flex justify-content-between"><span>Tuesday</span><span>9:00 -
-                                        24:00</span></li>
-                                <li class="d-flex justify-content-between"><span>Wednesday</span><span>9:00 -
-                                        24:00</span>
+                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.1') }}</span><span>9:00 -
+                                        20:00</span></li>
+                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.2') }}</span><span>9:00 -
+                                        20:00</span>
                                 </li>
-                                <li class="d-flex justify-content-between"><span>Thursday</span><span>9:00 -
-                                        24:00</span></li>
-                                <li class="d-flex justify-content-between"><span>Friday</span><span>9:00 - 02:00</span>
+                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.3') }}</span><span>9:00 -
+                                        20:00</span></li>
+                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.4') }}</span><span>9:00 - 02:00</span>
                                 </li>
-                                <li class="d-flex justify-content-between"><span>Saturday</span><span>9:00 -
-                                        02:00</span></li>
-                                <li class="d-flex justify-content-between"><span>Sunday</span><span> Closed</span></li>
+                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.5') }}</span><span>9:00 -
+                                        20:00</span></li>
+                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.6') }}</span><span> {{ __('messages.closed') }}</span></li>
                             </ul>
                         </div>
 
