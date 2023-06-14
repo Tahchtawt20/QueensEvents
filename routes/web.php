@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\ClientController ;
+use App\Http\Controllers\userController ;
 
 
 /*
@@ -19,11 +20,16 @@ use App\Http\Controllers\Client\ClientController ;
 Route::view('/', 'welcome')->name('welcome');
 Route::view('/about', ('about'))->name('about');
 Route::view('/theme', ('theme'))->name('theme');
-
-Route::get('/reservation', [ClientController::class ,'create' ])->name('reservation');
 Route::view('/special', ('special'))->name('special');
 Route::view('/team', ('team'))->name('team');
+
+Route::get('/reservation', [ClientController::class ,'create' ])->name('reservation');
 Route::post('/reservation' , [ClientController::class ,'store'])->name('storeRes');
+Route::get('/myevents' , [ClientController::class ,'index'])->name('myevents');
+
+Route::get('/myaccount' , [userController::class ,'index'])->name('indexAcc');
+Route::put('/myaccount/{id}',[userController::class, 'update'])->name('updateAcc');
+Route::get('/myaccount/{id}/edit',[userController::class, 'edit'])->name('editAcc');
 
 Auth::routes();
 

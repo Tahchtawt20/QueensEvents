@@ -13,7 +13,7 @@ class eventType extends Model
     protected $table = 'event_type';
     public function event(): HasMany 
     { 
-        return $this->hasMany(event::class); 
+        return $this->hasMany(event::class , 'id_type'); 
     }
 
 }

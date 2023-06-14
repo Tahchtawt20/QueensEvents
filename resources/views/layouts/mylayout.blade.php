@@ -117,11 +117,11 @@
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         @if (Auth::user()->role=='client')
                                         <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.reservation') }}</a>
-                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.myevents') }}</a>
+                                        <a href="{{ route('myevents') }}" class="dropdown-item">{{ __('messages.myevents') }}</a>
                                         @else
                                         <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.reservation') }}s</a>
                                         @endif
-                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.account') }}</a>
+                                        <a href="{{ route('indexAcc') }}" class="dropdown-item">{{ __('messages.account') }}</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                                  document.getElementById('logout-form').submit();">

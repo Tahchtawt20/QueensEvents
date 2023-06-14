@@ -15,6 +15,12 @@ class ClientController extends Controller
 
 {
 
+    public function index()
+    {
+        $event = Auth::user()->event()->with('eventType')->get();
+        return view('myEvents', compact('event'));
+    }
+
     public function create()
     {
         $event=eventType::all();
