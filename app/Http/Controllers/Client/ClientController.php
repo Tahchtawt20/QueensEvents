@@ -29,7 +29,8 @@ class ClientController extends Controller
     public function create()
     {
         $event = eventType::all();
-        return view('reservation', ['event' => $event]);
+        $reservedDates = event::pluck('date_event')->toArray();
+        return view('reservation', compact('event' , 'reservedDates'));
     }
 
 

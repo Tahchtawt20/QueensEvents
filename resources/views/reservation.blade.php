@@ -99,4 +99,21 @@
 
         </div>
     </section>
+
+
+<script>
+    var reservedDates = {!! json_encode($reservedDates) !!};
+    var dateInput = document.querySelector('input[name="date"]');
+
+    dateInput.addEventListener('input', function () {
+        var selectedDate = this.value;
+        var isReserved = reservedDates.includes(selectedDate);
+        
+        if (isReserved) {
+            this.setCustomValidity('This date is already reserved.');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+</script>
 @endsection
