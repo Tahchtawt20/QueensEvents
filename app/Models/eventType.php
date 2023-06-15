@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Support\Facades\event;
 
 class eventType extends Model
 {
     use HasFactory;
+
     protected $table = 'event_type';
+
     public function event(): HasMany 
     { 
-        return $this->hasMany(event::class , 'id_type'); 
+        return $this->hasMany(event::class , 'id'); 
     }
 
 }
