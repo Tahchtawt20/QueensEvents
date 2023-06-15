@@ -28,7 +28,7 @@
                                 <tr>
                                     <td scope='row'>{{ $ide }}</td>
                                     <td><strong>{{ $event->name }}</strong></td>
-                                    <td><strong>{{ $event->eventType?->name }}</strong></td>
+                                    <td><strong>{{ $event->eventType->name }}</strong></td>
                                     <td><strong>{{ $event->theme }}</strong></td>
                                     <td><strong>{{ $event->date_event }}</strong></td>
                                     <td><strong>{{ $event->time_event }}</strong></td>

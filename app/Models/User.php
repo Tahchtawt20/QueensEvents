@@ -13,7 +13,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    public function event() : HasMany
+    public function events() : HasMany
     {
         return $this->hasMany(event::class , 'id_user');
     }

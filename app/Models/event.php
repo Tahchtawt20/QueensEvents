@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Foundation\Auth\User;
 
 class event extends Model
 {
@@ -14,8 +15,13 @@ class event extends Model
 
     public function eventType(): BelongsTo 
     { 
-        return $this->belongsTo(eventType::class , 'id'); 
+        return $this->belongsTo(eventType::class , 'id_type'); 
+
     }
+    public function user() : BelongsTo
+{
+    return $this->belongsTo(User::class);
+}
     
 
 }

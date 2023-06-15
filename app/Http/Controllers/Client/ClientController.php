@@ -17,8 +17,9 @@ class ClientController extends Controller
 
     public function index()
     {
-        $event = Auth::user()->event()->with('eventType')->get();
-        return view('myEvents', compact('event'));
+        $userId = auth()->id();
+        $event = event::where('id_user', $userId)->with('eventType')->get();
+        return view('myEvents', compact('event' ));
     }
 
     public function create()
