@@ -78,6 +78,9 @@ return array(
     'custom' => [
         'password'=>[
             'min'=>'Le mot de passe doit contenir au moins :min caractères.'
+        ],
+        'name'=>[
+            'min'=>'Le champ nom doit contenir au moins :min caractères. '
         ]
     ],
 

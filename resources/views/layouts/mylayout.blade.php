@@ -15,16 +15,13 @@
     <link rel="stylesheet" href="{{ asset('select2/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('owlcarousel/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
 
     <!-- Fonts -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- CSS -->
     @vite('resources/js/app.js')
@@ -95,7 +92,7 @@
                     <ul class="navbar-nav d-flex justify-content-between">
                         <div class="d-flex flex-lg-row flex-column">
                             <li class="nav-item active">
-                                <a class="nav-link" href={{ route('theme') }}>{{ __('messages.theme')  }}</a>
+                                <a class="nav-link" href={{ route('theme') }}>{{ __('messages.themes')  }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href={{ route('team') }}>{{ __('messages.team')  }}</a>

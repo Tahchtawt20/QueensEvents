@@ -1,43 +1,48 @@
 @extends('layouts.mylayout')
 @section('content')
     <!-- Reservation Section -->
+    <section id="gtco-team" class="bg-white section-padding">
         <div class="container">
-            <header class="card-header">
-                <p class="card-header-title">My Events</p>
-    
-                <a href="{{ route('reservation') }}">Make reservation</a>
-            </header>
-            <div class="card-content">
-                <div class="content">
-                    <table class="table is-hoverable">
+            <div class="section-content">
+                <div class="heading-section text-center">
+                    <h2>
+                        {{ __('messages.myevents') }}
+                    </h2>
+                    <a href="{{ route('reservation') }}">Make reservation</a>
+                </div>
+                <div class="row">
+                    <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th>Theme</th>
-                                <th>Date Event</th>
-                                <th>Time Event</th>
+                                <th scope="col">#</th>
+                                <th scope="col">{{ __('messages.name') }}</th>
+                                <th scope="col">{{ __('messages.eventType') }}</th>
+                                <th scope="col">{{ __('messages.theme') }}</th>
+                                <th scopr='col'>Date</th>
+                                <th scopr='col'>{{ __('messages.time') }}</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($event as $event)
-                            <tr>
-                                <td><strong>{{ $event->name }}</strong></td>
-                                <td><strong>{{ $event->eventType?->name}}</strong></td>
-                                <td><strong>{{ $event->theme }}</strong></td>
-                                <td><strong>{{ $event->date_event }}</strong></td>
-                                <td><strong>{{ $event->time_event }}</strong></td>
-                            </tr>
-                        @endforeach
+                            @php $ide=1 @endphp
+                            @foreach ($event as $event)
+                                <tr>
+                                    <td scope='row'>{{ $ide }}</td>
+                                    <td><strong>{{ $event->name }}</strong></td>
+                                    <td><strong>{{ $event->eventType?->name }}</strong></td>
+                                    <td><strong>{{ $event->theme }}</strong></td>
+                                    <td><strong>{{ $event->date_event }}</strong></td>
+                                    <td><strong>{{ $event->time_event }}</strong></td>
+                                </tr>
+                                @php $ide++ @endphp
+                            @endforeach
                         </tbody>
                     </table>
-                </div>
-            </div>
-            {{-- <footer class="card-footer is-centered">
+
+                    {{-- <footer class="card-footer is-centered">
                 {{ $event->links() }}
             </footer> --}}
-        </div>
+                </div>
+            </div>
 
-        </div>
     </section>
 @endsection

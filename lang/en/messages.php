@@ -4,7 +4,8 @@ return[
     'home'=>'Home',
     'about'=>'About us',
     'special'=>'Special Dishes',
-    'theme'=>'Themes',
+    'themes'=>'Themes',
+    'theme'=>'Theme',
     'team'=>'Teams',
     'title1'=>'Wedding Planner',
     'title2'=>'& Event Designer',
@@ -42,5 +43,9 @@ return[
     'afterLogin1'=>'Welcome ',
     'afterLogin2'=>' . You have successfully logged in !',
     'days'=>['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
-    'closed'=>'Closed'
+    'closed'=>'Closed',
+    'createEvent'=>'Create Event',
+    'eventType'=>'Event Type',
+    'personalized'=>'Personalized',
+    'time'=>'Time'
 ];

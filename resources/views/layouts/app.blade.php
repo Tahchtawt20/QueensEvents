@@ -97,7 +97,7 @@
                     <ul class="navbar-nav d-flex justify-content-between">
                         <div class="d-flex flex-lg-row flex-column">
                             <li class="nav-item active">
-                                <a class="nav-link" href={{ route('theme') }}>{{ __('messages.theme') }}</a>
+                                <a class="nav-link" href={{ route('theme') }}>{{ __('messages.themes') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href={{ route('team') }}>{{ __('messages.team') }}</a>

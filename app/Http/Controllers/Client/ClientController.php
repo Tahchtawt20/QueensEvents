@@ -30,6 +30,9 @@ class ClientController extends Controller
 
     public function store(Request $request){
         
+        $request->validate([
+            'name'=>'required|min:4',
+        ]);
         $user = DB::table('users')->where('email', Auth::user()->email)->first();
         $userId = $user->id;
 
@@ -41,6 +44,6 @@ class ClientController extends Controller
             'time_event' => $request->time,
             'id_user'=> $userId,
         ]);
-        return redirect()->route('reservation');
+        return redirect()->route('myevents');
     }
 }

@@ -4,7 +4,8 @@ return[
     'home'=>'Acceuil',
     'about'=>'À propos de nous',
     'special'=>'Plats Spéciaux',
-    'theme'=>'Thèmes',
+    'themes'=>'Thèmes',
+    'theme'=>'Thème',
     'team'=>'Équipes',
     'title1'=>'Planificateur de mariage &',
     'title2'=>'concepteur d\'événements',
@@ -42,5 +43,9 @@ return[
     'afterLogin1'=>'Bienvenue ',
     'afterLogin2'=>' . Vous êtes connecté(e) avec succès !',
     'days'=>['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'],
-    'closed'=>'Fermé'
+    'closed'=>'Fermé',
+    'createEvent'=>'Créer un Événement',
+    'eventType'=>'Type d\'Événement',
+    'personalized'=>'Personnalisé',
+    'time'=>'Heure'
 ];
