@@ -116,7 +116,7 @@
                                         <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.reservation') }}</a>
                                         <a href="{{ route('myevents') }}" class="dropdown-item">{{ __('messages.myevents') }}</a>
                                         @else
-                                        <a href="{{ route('reservation') }}" class="dropdown-item">{{ __('messages.reservation') }}s</a>
+                                        <a href="{{ route('reservations') }}" class="dropdown-item">{{ __('messages.reservation') }}s</a>
                                         @endif
                                         <a href="{{ route('indexAcc') }}" class="dropdown-item">{{ __('messages.account') }}</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"

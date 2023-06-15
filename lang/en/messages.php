@@ -47,5 +47,8 @@ return[
     'createEvent'=>'Create Event',
     'eventType'=>'Event Type',
     'personalized'=>'Personalized',
-    'time'=>'Time'
+    'time'=>'Time',
+    'waiter'=>'Waiters Manager',
+    'deco'=>'Interior Designer',
+    'notFound'=>'404 - Page Not Found'
 ];

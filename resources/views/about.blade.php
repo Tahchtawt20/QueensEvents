@@ -23,7 +23,7 @@
                             safe country. A small river named Duden flows by their place and supplies it with the
                             necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
                             fly into your mouth.</p>
-                        <h3 class="mt-5" style="color:#f34949 ">{{ __('Events') }}</h3>
+                        <h3 class="mt-5" style="color:#f34949 ">{{ __('messages.events') }}</h3>
                         <div class="row">
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">

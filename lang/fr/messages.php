@@ -47,5 +47,8 @@ return[
     'createEvent'=>'Créer un Événement',
     'eventType'=>'Type d\'Événement',
     'personalized'=>'Personnalisé',
-    'time'=>'Heure'
+    'time'=>'Heure',
+    'waiter'=>'Patron des Serveurs',
+    'decor'=>'Designer d\'intérieur',
+    'notFound'=>'404 - Page Introuvable'
 ];
