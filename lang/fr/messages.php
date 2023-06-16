@@ -11,7 +11,7 @@ return[
     'title2'=>'concepteur d\'événements',
     'login'=>'Connexion',
     'lang'=>'Langue',
-    'reservation'=>'Résérvation',
+    'reservation'=>'Réservation',
     'myevents'=>'Mes Evénements',
     'account'=>'Mon Compte',
     'logout'=>'Déconnexion',
@@ -25,8 +25,8 @@ return[
     'circumcision'=>'Circoncision',
     'gender'=>'Révélation de genre',
     'more'=>'Et Plus ...',
-    'happy'=>'Client Heureux',
-    'rights'=>'Tous droits résérvés',
+    'happy'=>'Client Satisfait',
+    'rights'=>'Tous droits réservés',
     'enterMail'=>'Entrez un email',
     'submit'=>'Valider',
     'groupe'=>'Groupe Musical',
@@ -50,5 +50,10 @@ return[
     'time'=>'Heure',
     'waiter'=>'Patron des Serveurs',
     'decor'=>'Designer d\'intérieur',
-    'notFound'=>'404 - Page Introuvable'
+    'notFound'=>'404 - Page Introuvable',
+    'statusAdd'=>'Votre réservation est faite avec succès !',
+    'statusUpdate'=>'Vos informations sont modifiées avec succès !',
+    'editAccount'=>'Modifier les informations de votre compte',
+    'currentPass'=>'Mot de passe actuel',
+    'newPass'=>'Nouveau mot de passe'
 ];

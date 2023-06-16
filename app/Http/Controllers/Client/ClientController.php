@@ -51,6 +51,6 @@ class ClientController extends Controller
             'time_event' => $request->time,
             'id_user' => $userId,
         ]);
-        return redirect()->route('myevents');
+        return redirect()->route('myevents')->with('status','messages.statusAdd');
     }
 }

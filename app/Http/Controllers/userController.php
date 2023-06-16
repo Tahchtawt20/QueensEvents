@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Hash;
 
 class userController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index ()  {
         $user = DB::table('users')->where('email', Auth::user()->email)->get();
         return view('myaccount' , compact('user'));
@@ -35,7 +40,7 @@ class userController extends Controller
                                     'telephone'=>$request->telephone,
                                     'email'=>$request->email,
                                     'password'=>$newPassword ]);
-        return redirect()->route('indexAcc');
+        return redirect()->route('indexAcc')->with('status','messages.statusUpdate');
         
     }
 }

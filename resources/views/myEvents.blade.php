@@ -1,6 +1,18 @@
 @extends('layouts.mylayout')
 @section('content')
     <!-- Reservation Section -->
+    <style>
+        @media (max-width:530px){
+        body{background-color: white}
+    }
+    </style>
+    <div class="text-center container">
+        @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ __(session('status')) }}
+        </div>
+    @endif
+    </div>
     <section id="gtco-team" class="bg-white section-padding">
         <div class="container">
             <div class="section-content">
@@ -8,12 +20,12 @@
                     <h2>
                         {{ __('messages.myevents') }}
                     </h2>
-                    <a href="{{ route('reservation') }}">Make reservation</a>
+                    <a href="{{ route('reservation') }}">{{ __('messages.reservation') }}</a>
                 </div>
                 <div class="row">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-striped">
                         <thead>
-                            <tr>
+                            <tr class="table-danger">
                                 <th scope="col">#</th>
                                 <th scope="col">{{ __('messages.name') }}</th>
                                 <th scope="col">{{ __('messages.eventType') }}</th>
@@ -26,7 +38,7 @@
                             @php $ide=1 @endphp
                             @foreach ($event as $event)
                                 <tr>
-                                    <td scope='row'>{{ $ide }}</td>
+                                    <th scope='row'>{{ $ide }}</th>
                                     <td><strong>{{ $event->name }}</strong></td>
                                     <td><strong>{{ $event->eventType->name }}</strong></td>
                                     <td><strong>{{ $event->theme }}</strong></td>

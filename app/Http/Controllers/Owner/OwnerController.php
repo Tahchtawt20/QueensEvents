@@ -14,7 +14,7 @@ class OwnerController extends Controller
     }
     public function index()
     {
-        $events = event::with('eventType')->get();
+        $events = event::with('eventType','user')->get();
         return view('reservations', compact('events'));
     }
 }
