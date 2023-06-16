@@ -33,6 +33,10 @@
             <div>
                 <label for="">Current Password</label>
                 <input  type="password" name="current_password" class="form-control" required>
+                @if ($errors->has('current_password'))
+                <div class="alert alert-danger">
+                    {{ $errors->first('current_password') }}
+                </div>
             </div>
             </div>
             <div>
