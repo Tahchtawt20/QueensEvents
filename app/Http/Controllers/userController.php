@@ -29,16 +29,13 @@ class userController extends Controller
             return redirect()->back()->withErrors(['current_password' => 'The current password is incorrect.']);
         }
         $newPassword = Hash::make($request->new_password);
-         DB::table('users')->where('id', $id)
+        DB::table('users')->where('id', $id)
                                   ->update([
                                     'name'=>$request->name,
                                     'telephone'=>$request->telephone,
                                     'email'=>$request->email,
-                                    'password'=>$newPassword
-                                  ]
-
-                                  );
-    return redirect()->route('indexAcc');
+                                    'password'=>$newPassword ]);
+        return redirect()->route('indexAcc');
         
     }
 }

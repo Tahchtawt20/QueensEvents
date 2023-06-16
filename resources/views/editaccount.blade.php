@@ -32,13 +32,18 @@
             <div>
             <div>
                 <label for="">Current Password</label>
-                <input  type="password" name="current_password" class="form-control" required>
+                <input  type="password" name="current_password" class="form-control" >
+                @if ($errors->has('current_password'))
+                <div class="alert alert-danger">
+                {{ $errors->first('current_password') }}
+                </div>
+                @endif
             </div>
             </div>
             <div>
             <div>
                 <label for="new_password">New Password</label>
-                <input  type="password" name="new_password" class="form-control" required>
+                <input  type="password" name="new_password" class="form-control" >
             </div>
             </div>
             <div>
