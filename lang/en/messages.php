@@ -49,7 +49,7 @@ return[
     'personalized'=>'Personalized',
     'time'=>'Time',
     'waiter'=>'Waiters Manager',
-    'deco'=>'Interior Designer',
+    'decor'=>'Interior Designer',
     'notFound'=>'404 - Page Not Found',
     'statusAdd'=>'Your reservation is done successfully !',
     'statusUpdate'=>'Your account informations are updated successfully !',

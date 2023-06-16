@@ -1,6 +1,11 @@
 @extends('layouts.mylayout')
 @section('content')
     <!-- Reservation Section -->
+    <style>
+        @media (max-width:530px){
+        body{background-color: white}
+    }
+    </style>
     <section id="gtco-team" class="bg-white section-padding">
         <div class="container">
             <div class="section-content">
@@ -10,12 +15,13 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-striped">
                         <thead>
-                            <tr>
+                            <tr class="table-danger">
                                 <th scope="col">#</th>
                                 <th scope="col">{{ __('messages.name') }}</th>
                                 <th scope="col">{{ __('messages.eventType') }}</th>
+                                <th scope="col">Client</th>
                                 <th scope="col">{{ __('messages.theme') }}</th>
                                 <th scopr='col'>Date</th>
                                 <th scopr='col'>{{ __('messages.time') }}</th>
@@ -25,9 +31,10 @@
                             @php $ide=1 @endphp
                             @forelse ($events as $event)
                                 <tr>
-                                    <td scope='row'>{{ $ide }}</td>
+                                    <th scope='row'>{{ $ide }}</th>
                                     <td><strong>{{ $event->name }}</strong></td>
                                     <td><strong>{{ $event->eventType->name }}</strong></td>
+                                    <td><strong>{{ $event->user->name }}</strong></td>
                                     <td><strong>{{ $event->theme }}</strong></td>
                                     <td><strong>{{ $event->date_event }}</strong></td>
                                     <td><strong>{{ $event->time_event }}</strong></td>

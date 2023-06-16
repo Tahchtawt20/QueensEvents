@@ -61,7 +61,7 @@
                                 <div class="col-md-6 form-group">
                                     <div class="input-group date @error('date') is-invalid @enderror" value="{{ old('date') }}" id="datetimepicker4" data-target-input="nearest" >
                                         <input type="date" class="form-control datetimepicker-input" placeholder="Date"
-                                            value="{{ date('Y-m-d', strtotime('+1 day')) }}" name='date'required />
+                                             name='date'required min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" />
 
                                     </div>
                                     @error('date')
@@ -84,9 +84,6 @@
                                     @enderror
                                 </div>
 
-                                <div class="col-md-12 form-group">
-                                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Extra informations ... "></textarea>
-                                </div>
                                 <div class="col-md-12 text-center">
                                     <button class="btn btn-primary btn-shadow btn-lg" type="submit"
                                         name="submit">{{ __('messages.createEvent') }}</button>

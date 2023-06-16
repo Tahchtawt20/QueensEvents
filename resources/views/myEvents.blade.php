@@ -1,6 +1,11 @@
 @extends('layouts.mylayout')
 @section('content')
     <!-- Reservation Section -->
+    <style>
+        @media (max-width:530px){
+        body{background-color: white}
+    }
+    </style>
     <div class="text-center container">
         @if (session('status'))
         <div class="alert alert-success" role="alert">
@@ -18,7 +23,7 @@
                     <a href="{{ route('reservation') }}">{{ __('messages.reservation') }}</a>
                 </div>
                 <div class="row">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-striped">
                         <thead>
                             <tr class="table-danger">
                                 <th scope="col">#</th>
