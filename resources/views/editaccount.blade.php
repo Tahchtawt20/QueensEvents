@@ -37,6 +37,7 @@
                 <div class="alert alert-danger">
                     {{ $errors->first('current_password') }}
                 </div>
+                @endif
             </div>
             </div>
             <div>
