@@ -675,3 +675,30 @@ a:hover {
     display: none;
   }
 }
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f7f8f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f06e6e;
+  border-radius: 5px; /* Change the radius value as per your preference */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f34949;
+}
+
+::selection {
+  background-color: #f06e6e; /* Change to your desired background color */
+  color: white; /* Change to your desired text color */
+}

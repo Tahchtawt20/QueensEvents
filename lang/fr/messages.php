@@ -50,5 +50,10 @@ return[
     'time'=>'Heure',
     'waiter'=>'Patron des Serveurs',
     'decor'=>'Designer d\'intérieur',
-    'notFound'=>'404 - Page Introuvable'
+    'notFound'=>'404 - Page Introuvable',
+    'statusAdd'=>'Votre résérvation est faite avec succès !',
+    'statusUpdate'=>'Vos informations sont modifiées avec succès !',
+    'editAccount'=>'Modifier les informations de votre compte',
+    'currentPass'=>'Mot de passe actuel',
+    'newPass'=>'Nouveau mot de passe'
 ];
