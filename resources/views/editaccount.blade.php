@@ -50,7 +50,7 @@
                                                 class="col-md-4 col-form-label text-md-end">{{ __('messages.currentPass') }}</label>
                                             <div class="col-md-6">
                                                 <input type="password" name="current_password"
-                                                    class="form-control  @error('password') is-invalid @enderror"
+                                                    class="form-control  @error('password') is-invalid @enderror "
                                                     autocomplete="current-password" required>
                                                 @if ($errors->has('current_password'))
                                                     <div class="text-danger">
@@ -63,7 +63,7 @@
                                             <label for="new_password"
                                                 class="col-md-4 col-form-label text-md-end">{{ __('messages.newPass') }}</label>
                                             <div class="col-md-6">
-                                                <input type="password" name="new_password" class="form-control" required>
+                                                <input type="password" name="new_password" class="form-control">
                                             </div>
                                         </div>
                                         <div class="my-2 d-flex justify-content-center">

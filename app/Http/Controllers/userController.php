@@ -27,19 +27,30 @@ class userController extends Controller
     public function update (Request $request , string $id)  {
         $request->validate([
             'current_password' => 'required',
-            'new_password' => 'required',
+            'new_password' => 'nullable',
         ]);
         $user = auth()->user();
         if (!Hash::check($request->current_password, $user->password)) {
             return redirect()->back()->withErrors(['current_password' => 'messages.current']);
         }
-        $newPassword = Hash::make($request->new_password);
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'telephone' => $request->telephone,
+        ];
+        if ($request->filled('new_password')) {    
+            $data['password'] = Hash::make($request->new_password);
+        }
+        $data = array_filter($data); // Remove any empty or null values
         DB::table('users')->where('id', $id)
-                                  ->update([
-                                    'name'=>$request->name,
-                                    'telephone'=>$request->telephone,
-                                    'email'=>$request->email,
-                                    'password'=>$newPassword ]);
+                          ->update($data);
+
+        // DB::table('users')->where('id', $id)
+        //                           ->update([
+        //                             'name'=>$request->name,
+        //                             'telephone'=>$request->telephone,
+        //                             'email'=>$request->email,
+        //                             'password'=>$newPassword ]);
         return redirect()->route('indexAcc')->with('status','messages.statusUpdate');
         
     }
