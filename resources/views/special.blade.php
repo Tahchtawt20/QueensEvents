@@ -29,18 +29,11 @@
                                     <img class="d-block w-100" src="{{ asset('pic55.jpg') }}" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('pic100.jpg') }}" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('pic200.jpg') }}" alt="Third slide">
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('pic300.jpg') }}" alt="Fourth slide">
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('pic800.jpg') }}" alt="Fifth slide">
-                                </div>
-
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                                 data-slide="prev">
