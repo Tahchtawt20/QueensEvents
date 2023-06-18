@@ -31,7 +31,7 @@ class userController extends Controller
         ]);
         $user = auth()->user();
         if (!Hash::check($request->current_password, $user->password)) {
-            return redirect()->back()->withErrors(['current_password' => 'The current password is incorrect.']);
+            return redirect()->back()->withErrors(['current_password' => 'messages.current']);
         }
         $newPassword = Hash::make($request->new_password);
         DB::table('users')->where('id', $id)

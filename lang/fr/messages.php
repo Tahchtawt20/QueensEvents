@@ -55,5 +55,6 @@ return[
     'statusUpdate'=>'Vos informations sont modifiées avec succès !',
     'editAccount'=>'Modifier les informations de votre compte',
     'currentPass'=>'Mot de passe actuel',
-    'newPass'=>'Nouveau mot de passe'
+    'newPass'=>'Nouveau mot de passe',
+    'current'=>'Le mot de passe actuel est incorrect .'
 ];

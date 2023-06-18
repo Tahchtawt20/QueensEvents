@@ -22,7 +22,7 @@ class ClientController extends Controller
     public function index()
     {
         $userId = auth()->id();
-        $event = event::where('id_user', $userId)->with('eventType')->get();
+        $event = event::where('id_user', $userId)->with('eventType')->paginate(10);
         return view('myEvents', compact('event'));
     }
 

@@ -2,16 +2,18 @@
 @section('content')
     <!-- Reservation Section -->
     <style>
-        @media (max-width:530px){
-        body{background-color: white}
-    }
+        @media (max-width:530px) {
+            body {
+                background-color: white
+            }
+        }
     </style>
     <div class="text-center container">
         @if (session('status'))
-        <div class="alert alert-success" role="alert">
-            {{ __(session('status')) }}
-        </div>
-    @endif
+            <div class="alert alert-success" role="alert">
+                {{ __(session('status')) }}
+            </div>
+        @endif
     </div>
     <section id="gtco-team" class="bg-white section-padding">
         <div class="container">
@@ -22,10 +24,10 @@
                     </h2>
                     <a href="{{ route('reservation') }}">{{ __('messages.reservation') }}</a>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <table class="table table-hover table-striped">
                         <thead>
-                            <tr class="table-danger">
+                            <tr style="color:white;background-color:#f06e6e">
                                 <th scope="col">#</th>
                                 <th scope="col">{{ __('messages.name') }}</th>
                                 <th scope="col">{{ __('messages.eventType') }}</th>
@@ -36,23 +38,23 @@
                         </thead>
                         <tbody>
                             @php $ide=1 @endphp
-                            @foreach ($event as $event)
+                            @foreach ($event as $e)
                                 <tr>
                                     <th scope='row'>{{ $ide }}</th>
-                                    <td><strong>{{ $event->name }}</strong></td>
-                                    <td><strong>{{ $event->eventType->name }}</strong></td>
-                                    <td><strong>{{ $event->theme }}</strong></td>
-                                    <td><strong>{{ $event->date_event }}</strong></td>
-                                    <td><strong>{{ $event->time_event }}</strong></td>
+                                    <td><strong>{{ $e->name }}</strong></td>
+                                    <td><strong>{{ $e->eventType->name }}</strong></td>
+                                    <td><strong>{{ $e->theme }}</strong></td>
+                                    <td><strong>{{ $e->date_event }}</strong></td>
+                                    <td><strong>{{ $e->time_event }}</strong></td>
                                 </tr>
                                 @php $ide++ @endphp
                             @endforeach
                         </tbody>
                     </table>
 
-                    {{-- <footer class="card-footer is-centered">
-                {{ $event->links() }}
-            </footer> --}}
+                    <div class="links">
+                        {{ $event->links() }}
+                    </div>
                 </div>
             </div>
 

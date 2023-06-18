@@ -2,9 +2,11 @@
 @section('content')
     <!-- Reservation Section -->
     <style>
-        @media (max-width:530px){
-        body{background-color: white}
-    }
+        @media (max-width:530px) {
+            body {
+                background-color: white
+            }
+        }
     </style>
     <section id="gtco-team" class="bg-white section-padding">
         <div class="container">
@@ -14,10 +16,10 @@
                         {{ __('messages.reservation') }}s
                     </h2>
                 </div>
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     <table class="table table-hover table-striped">
                         <thead>
-                            <tr class="table-danger">
+                            <tr style="color:white;background-color:#f06e6e">
                                 <th scope="col">#</th>
                                 <th scope="col">{{ __('messages.name') }}</th>
                                 <th scope="col">{{ __('messages.eventType') }}</th>
@@ -31,7 +33,7 @@
                             @php $ide=1 @endphp
                             @forelse ($events as $event)
                                 <tr>
-                                    <th scope='row'>{{ $ide }}</th>
+                                    <th>{{ $ide }}</th>
                                     <td><strong>{{ $event->name }}</strong></td>
                                     <td><strong>{{ $event->eventType->name }}</strong></td>
                                     <td><strong>{{ $event->user->name }}</strong></td>
@@ -46,9 +48,10 @@
                         </tbody>
                     </table>
 
-                    {{-- <footer class="card-footer is-centered">
-                {{ $event->links() }}
-            </footer> --}}
+                    <div class="links">
+                        {{ $events->links() }}
+                    </div>
+
                 </div>
             </div>
 

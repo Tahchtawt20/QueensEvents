@@ -55,5 +55,6 @@ return[
     'statusUpdate'=>'Your account informations are updated successfully !',
     'editAccount'=>'Edit Your Account Informations',
     'currentPass'=>'Current Password',
-    'newPass'=>'New Password'
+    'newPass'=>'New Password',
+    'current'=>'The current password is incorrect .'
 ];

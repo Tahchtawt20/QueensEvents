@@ -702,3 +702,15 @@ a:hover {
   background-color: #f06e6e; /* Change to your desired background color */
   color: white; /* Change to your desired text color */
 }
+
+.links .pagination .page-item.active .page-link {
+  background-color: #f34949;
+  border-color: #f34949;
+  color: white;
+}
+.links .pagination .page-link {
+  color: #f34949;
+}
+.links .pagination .page-item.disabled .page-link {
+  color: rgb(148, 148, 148);
+}
