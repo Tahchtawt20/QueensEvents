@@ -7,7 +7,7 @@
                 <div class="heading-section text-center">
 
                     <h2>
-                        {{ __('messages.special') }}
+                        {{ __('messages.ourThemes') }}
                     </h2>
                 </div>
                 <div class="row mt-5">
