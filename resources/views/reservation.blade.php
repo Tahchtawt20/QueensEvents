@@ -9,10 +9,10 @@
                     <div class="section-content bg-white p-5 shadow">
                         <div class="heading-section text-center">
                             <span class="subheading">
-                                Reservation
+                                {{ __('messages.reservation') }}
                             </span>
                             <h2>
-                                Book Now
+                                {{ __('messages.bookNow') }}
                             </h2>
                         </div>
                         <form method="post" name="contact-us" action={{ route('storeRes') }}>

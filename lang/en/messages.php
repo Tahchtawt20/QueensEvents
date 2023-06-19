@@ -67,5 +67,6 @@ return[
     'strawberry' => 'Strawberry Juice',
     'tea' => 'Tea',
     'kiwi' => 'Kiwi Juice',
-    
+    'bookNow'=>'Book Now',
+    'birthCake'=>'Birthday Cake'
 ];

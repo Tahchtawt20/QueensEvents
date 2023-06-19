@@ -20,7 +20,7 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src={{asset("pic55.jpg")}} alt="">
+                            <img class="img-fluid" src={{asset("pic555.jpg")}} alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -36,7 +36,7 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src={{asset('pic6.jpg')}} alt="">
+                            <img class="img-fluid" src={{asset('pic201.jpg')}} alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -52,7 +52,7 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src={{asset('pic300.jpg')}} alt="">
+                            <img class="img-fluid" src={{asset('pic301.jpg')}} alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -128,7 +128,7 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src={{asset('pic345.jpg')}} alt="">
+                            <img class="img-fluid" src={{asset('pic346.jpg')}} alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -144,7 +144,7 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src={{asset('pic123.jpg')}} alt="">
+                            <img class="img-fluid" src={{asset('pic124.jpg')}} alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -160,7 +160,7 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src={{asset('pic456.jpg')}} alt="">
+                            <img class="img-fluid" src={{asset('pic457.jpg')}} alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">

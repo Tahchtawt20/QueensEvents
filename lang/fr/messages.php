@@ -56,5 +56,14 @@ return[
     'editAccount'=>'Modifier les informations de votre compte',
     'currentPass'=>'Mot de passe actuel',
     'newPass'=>'Nouveau mot de passe',
-    'current'=>'Le mot de passe actuel est incorrect .'
+    'current'=>'Le mot de passe actuel est incorrect .',
+    'bookNow'=>'Résérver Maintenant',
+    'birthCake'=>'Gâteau d\'anniversaire',
+    'moroccan' => 'Plat Marocain',
+    'tajine' => 'Tajine Marocain',
+    'chicken' => 'Poulet rôti',
+    'juice' => 'Jus',
+    'strawberry' => 'Jus de Fraise',
+    'tea' => 'Thé',
+    'kiwi' => 'Jus de Kiwi',
 ];
