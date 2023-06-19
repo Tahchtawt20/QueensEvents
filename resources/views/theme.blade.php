@@ -2,7 +2,7 @@
 @section('title',__('messages.themes'))
 @section('content')
     <!-- Special Dishes Section -->
-    <section id="gtco-special-dishes" class="bg-grey section-padding">
+    <section id="gtco-special-dishes" class="bg-white section-padding">
         <div class="container">
             <div class="section-content">
                 <div class="heading-section text-center">
