@@ -1,14 +1,14 @@
 @extends('layouts.mylayout')
-@section('title',__('messages.themes'))
+@section('title',__("messages.events"))
 @section('content')
     <!-- Special Dishes Section -->
-    <section id="gtco-special-dishes" class="bg-grey section-padding">
+    <section id="gtco-special-dishes" class="bg-white section-padding">
         <div class="container">
             <div class="section-content">
                 <div class="heading-section text-center">
 
                     <h2>
-                        {{ __('messages.ourThemes') }}
+                        {{ __('messages.events') }}
                     </h2>
                 </div>
                 <div class="row mt-5">
@@ -132,6 +132,5 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 @endsection

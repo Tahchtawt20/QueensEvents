@@ -1,4 +1,5 @@
 @extends('layouts.mylayout')
+@section('title',__('messages.notFound'))
 @section('content')
     <div class="container section-padding">
         <div class="section-content">

@@ -24,6 +24,7 @@ Route::view('/about', ('about'))->name('about');
 Route::view('/theme', ('theme'))->name('theme');
 Route::view('/special', ('special'))->name('special');
 Route::view('/team', ('team'))->name('team');
+Route::view('/events', ('events'))->name('events');
 Route::get('lang/{lang}',[
     'uses'=>'App\Http\Controllers\LocalizationController@switchLang',
 ])->name('lang');

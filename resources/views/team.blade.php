@@ -1,5 +1,5 @@
 @extends('layouts.mylayout')
-<!-- Team Section -->
+@section('title',__('messages.team'))
 @section('content')
 
 <section id="gtco-team" class="bg-white section-padding">

@@ -1,4 +1,5 @@
 @extends('layouts.mylayout')
+@section('title',__('messages.reservation').'s')
 @section('content')
     <!-- Reservation Section -->
     <style>

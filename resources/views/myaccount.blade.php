@@ -1,4 +1,5 @@
 @extends('layouts.mylayout')
+@section('title',__('messages.account'))
 @section('content')
     <!-- Reservation Section -->
     <div class="text-center container">

@@ -7,7 +7,7 @@
                 <div class="col-lg-6 hero-left">
                     <h1 class="display-4 mb-5">{{ __('messages.title1') }} <br> {{ __('messages.title2') }}</h1>
                     <div class="mb-2">
-                        <a class="btn btn-primary btn-shadow btn-lg" href="#"
+                        <a class="btn btn-primary btn-shadow btn-lg" href="{{ route('theme') }}"
                             role="button">{{ __('messages.explore') }}</a>
                         <a class="btn btn-icon btn-lg" href="https://youtu.be/csz_UswEe8c">
                             <span class="lnr lnr-film-play"></span>

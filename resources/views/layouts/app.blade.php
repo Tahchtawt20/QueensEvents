@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-    <title>Queens Events</title>
+    <title>@yield('title','Queens Events')</title>
     <meta name="description" content="Resto">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -77,14 +77,16 @@
                         </li>
                         <div class="d-flex flex-lg-row flex-column">
                             <li class="nav-item active">
-                                <a class="nav-link" href={{ route('welcome') }}>{{ __('messages.home') }}<span
-                                        class="sr-only">(current)</span></a>
+                                <a class="nav-link" href={{ route('welcome') }}>{{ __('messages.home')  }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href={{ route('about') }}>{{ __('messages.about') }}</a>
+                                <a class="nav-link" href={{ route('about') }}>{{ __('messages.about')  }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href={{ route('special') }}>{{ __('messages.special') }}</a>
+                                <a class="nav-link" href={{ route('special') }}>{{ __('messages.special')  }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href={{ route('events') }}>{{ __('messages.events')  }}</a>
                             </li>
 
                         </div>

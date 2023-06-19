@@ -1,4 +1,5 @@
 @extends('layouts.mylayout')
+@section('title',__('messages.myevents'))
 @section('content')
     <!-- Reservation Section -->
     <style>

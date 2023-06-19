@@ -1,5 +1,5 @@
 @extends('layouts.mylayout')
-
+@section('title',__('messages.home'))
 @section('content')
     <section class="bg-white section-padding">
         <div class="container">

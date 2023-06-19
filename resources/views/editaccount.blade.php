@@ -1,4 +1,5 @@
 @extends('layouts.mylayout')
+@section('title',__('messages.editAccount'))
 @section('content')
     <!-- Reservation Section -->
     <section id="gtco-team" class="bg-white section-padding">

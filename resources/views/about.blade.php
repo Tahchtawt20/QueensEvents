@@ -1,4 +1,5 @@
 @extends('layouts.mylayout')
+@section('title', __('messages.about'))
 @section('content')
 <!-- Welcome Section -->
 <section id="gtco-welcome" class="bg-white section-padding">
