@@ -56,5 +56,16 @@ return[
     'editAccount'=>'Edit Your Account Informations',
     'currentPass'=>'Current Password',
     'newPass'=>'New Password',
-    'current'=>'The current password is incorrect .'
+    'current'=>'The current password is incorrect .',
+    'cakes'=>' Cakes',
+    'weddingCake' => 'Wedding Cake',
+    'babyCake' => 'Baby Shower Cake',
+    'moroccan' => 'Moroccan Food',
+    'tajine' => 'Moroccan Tajine',
+    'chicken' => 'Roast Chicken',
+    'juice' => 'Juice',
+    'strawberry' => 'Strawberry Juice',
+    'tea' => 'Tea',
+    'kiwi' => 'Kiwi Juice',
+    
 ];
