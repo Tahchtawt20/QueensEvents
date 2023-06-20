@@ -24,7 +24,7 @@ return [
     'myevents' => 'My Events',
     'circumcision' => 'Circumcision',
     'gender' => 'Gender Reveal',
-    'more' => 'And More ...',
+    'more' => 'Show More',
     'happy' => 'Happy Customer',
     'rights' => 'All Rights Reserved',
     'enterMail' => 'Enter Email',
@@ -68,5 +68,9 @@ return [
     'tea' => 'Tea',
     'kiwi' => 'Kiwi Juice',
     'bookNow' => 'Book Now',
-    'birthCake' => 'Birthday Cake'
+    'birthCake' => 'Birthday Cake',
+    'book' => 'Book Now',
+    'wedding' => 'Wedding',
+    'grad'=>'Graduation',
+    'bap'=>'Moroccan Baptism'
 ];

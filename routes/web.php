@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\ClientController ;
 use App\Http\Controllers\Owner\OwnerController;
 use App\Http\Controllers\userController ;
-
+use App\Models\event;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +25,7 @@ Route::view('/theme', ('theme'))->name('theme');
 Route::view('/special', ('special'))->name('special');
 Route::view('/team', ('team'))->name('team');
 Route::view('/events', ('events'))->name('events');
+
 Route::get('lang/{lang}',[
     'uses'=>'App\Http\Controllers\LocalizationController@switchLang',
 ])->name('lang');

@@ -24,7 +24,7 @@ return [
     'myevents' => 'Mes Événements',
     'circumcision' => 'Circoncision',
     'gender' => 'Révélation de genre',
-    'more' => 'Et Plus ...',
+    'more' => 'Voir Plus',
     'happy' => 'Client Satisfait',
     'rights' => 'Tous droits réservés',
     'enterMail' => 'Entrez un email',

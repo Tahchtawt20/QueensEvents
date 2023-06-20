@@ -123,7 +123,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <p>{{ __('messages.more') }}</p>
+                            <a href={{route('events')}} class="btn-primary mt-3">{{ __('messages.more') }}</a>
                         </div>
                     </div>
                 </div>
