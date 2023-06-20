@@ -53,11 +53,12 @@ return [
     'notFound' => '404 - Page Introuvable',
     'statusAdd' => 'Votre réservation est faite avec succès !',
     'statusUpdate' => 'Vos informations sont modifiées avec succès !',
+    'statusCancel'=>'Votre réservation a été annulée. N\'hésitez pas à nous contacter si vous avez des questions ou si vous avez besoin d\'une assistance supplémentaire',
     'editAccount' => 'Modifier les informations de votre compte',
     'currentPass' => 'Mot de passe actuel',
     'newPass' => 'Nouveau mot de passe',
     'current' => 'Le mot de passe actuel est incorrect .',
-    'bookNow' => 'Résérver Maintenant',
+    'bookNow' => 'Réserver Maintenant',
     'birthCake' => 'Gâteau d\'anniversaire',
     'moroccan' => 'Plat Marocain',
     'tajine' => 'Tajine Marocain',
@@ -66,4 +67,7 @@ return [
     'strawberry' => 'Jus de Fraise',
     'tea' => 'Thé',
     'kiwi' => 'Jus de Kiwi',
+    'confirmCancel'=>'Êtes-vous sûr(e) de vouloir supprimer cette réservation?',
+    'cancel'=>'Annuler la résérvation',
+    'canceled'=>'Annulée'
 ];

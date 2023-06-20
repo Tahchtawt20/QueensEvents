@@ -35,6 +35,7 @@
                                 <th scope="col">{{ __('messages.theme') }}</th>
                                 <th scopr='col'>Date</th>
                                 <th scopr='col'>{{ __('messages.time') }}</th>
+                                <th scopr='col'></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -47,6 +48,13 @@
                                     <td><strong>{{ $e->theme }}</strong></td>
                                     <td><strong>{{ $e->date_event }}</strong></td>
                                     <td><strong>{{ $e->time_event }}</strong></td>
+                                    <td><form action="{{ route('edit', $e->id) }}" method="post">
+                                        @csrf
+                                        @method('PUT')
+                                        <button class="btn" style="border:#f06e6e 1px solid; color:#f06e6e;background-color:transparent"
+                                            type="submit"
+                                            onclick="return confirm('{{__('messages.confirmCancel')}}')">{{ __('messages.cancel') }}</button>
+                                    </form></td>
                                 </tr>
                                 @php $ide++ @endphp
                             @endforeach

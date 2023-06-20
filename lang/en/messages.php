@@ -51,8 +51,9 @@ return [
     'waiter' => 'Waiters Manager',
     'decor' => 'Interior Designer',
     'notFound' => '404 - Page Not Found',
-    'statusAdd' => 'Your reservation is done successfully !',
+    'statusAdd' => 'Your reservation is done successfully ! We will contact you soon .',
     'statusUpdate' => 'Your account informations are updated successfully !',
+    'statusCancel'=>'Your reservation has been canceled. Please feel free to contact us if you have any questions or need further assistance.',
     'editAccount' => 'Edit Your Account Informations',
     'currentPass' => 'Current Password',
     'newPass' => 'New Password',
@@ -68,5 +69,8 @@ return [
     'tea' => 'Tea',
     'kiwi' => 'Kiwi Juice',
     'bookNow' => 'Book Now',
-    'birthCake' => 'Birthday Cake'
+    'birthCake' => 'Birthday Cake',
+    'confirmCancel'=>'Are you sure you want to cancel this reservation?',
+    'cancel'=>'Cancel Reservation',
+    'canceled'=>'Canceled'
 ];
