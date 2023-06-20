@@ -69,5 +69,8 @@ return [
     'kiwi' => 'Jus de Kiwi',
     'confirmCancel'=>'Êtes-vous sûr(e) de vouloir supprimer cette réservation?',
     'cancel'=>'Annuler la résérvation',
-    'canceled'=>'Annulée'
+    'canceled'=>'Annulée',
+    'wedding'=>'Mariage',
+    'grad'=>'Graduation' ,
+    'bap'=> 'Marocain Baptême' 
 ];

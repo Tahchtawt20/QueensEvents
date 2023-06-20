@@ -24,6 +24,7 @@
                                 <th scope="col">#</th>
                                 <th scope="col">{{ __('messages.name') }}</th>
                                 <th scope="col">{{ __('messages.eventType') }}</th>
+                                <th scope="col">{{ __('messages.price') }}</th>
                                 <th scope="col">Client</th>
                                 <th scope="col">{{ __('messages.theme') }}</th>
                                 <th scopr='col'>Date</th>
@@ -37,6 +38,7 @@
                                     <th>{{ $ide }}</th>
                                     <td><strong>{{ $event->name }}</strong></td>
                                     <td><strong>{{ $event->eventType->name }}</strong></td>
+                                    <td><strong>{{ $event->eventType->price }}DH</strong></td>
                                     <td><strong>{{ $event->user->name }}</strong></td>
                                     <td><strong>{{ $event->theme }}</strong></td>
                                     <td><strong>

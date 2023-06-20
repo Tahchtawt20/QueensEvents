@@ -22,7 +22,7 @@
                                 alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt provident
                                 libero qui eum, corporis esse quos excepturi soluta?</p>
                             <h3 class="special-dishes-price">20 000.00DH</h3>
-                            <a href={{route('reservation')}} class="btn-primary mt-3">{{ __('messages.book') }}</a>
+                            <a href={{route('reservation')}} class="btn-primary mt-3">{{ __('messages.bookNow') }}</a>
                         </div>
                     </div>
                     <div class="col-lg-6 hero-right">
@@ -86,7 +86,7 @@
                                 accusamus culpa quam amet ipsam odit ea doloremque accusantium quo, itaque possimus eius.
                                 In a quis quibusdam omnis atque vero dolores!</p>
                             <h3 class="special-dishes-price">4000.00 DH</h3>
-                            <a href={{route('reservation')}} class="btn-primary mt-3">{{ __('messages.book') }}</a>
+                            <a href={{route('reservation')}} class="btn-primary mt-3">{{ __('messages.bookNow') }}</a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                                 vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt
                                 provident libero qui eum, corporis esse quos excepturi soluta?</p>
                             <h3 class="special-dishes-price">6000.00 DH</h3>
-                            <a href={{route('reservation')}} class="btn-primary mt-3">{{ __('messages.book') }}</a>
+                            <a href={{route('reservation')}} class="btn-primary mt-3">{{ __('messages.bookNow') }}</a>
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">

@@ -73,8 +73,8 @@ return [
     'confirmCancel'=>'Are you sure you want to cancel this reservation?',
     'cancel'=>'Cancel Reservation',
     'canceled'=>'Canceled',
-    'book' => 'Book Now',
     'wedding' => 'Wedding',
     'grad'=>'Graduation',
-    'bap'=>'Moroccan Baptism'
+    'bap'=>'Moroccan Baptism',
+    'price'=>'Price'
 ];
