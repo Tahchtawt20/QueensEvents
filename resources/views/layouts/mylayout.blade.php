@@ -189,7 +189,7 @@
                                 </li>
                                 <li class="d-flex justify-content-between"><span>{{ __('messages.days.3') }}</span><span>9:00 -
                                         20:00</span></li>
-                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.4') }}</span><span>9:00 - 02:00</span>
+                                <li class="d-flex justify-content-between"><span>{{ __('messages.days.4') }}</span><span>9:00 - 20:00</span>
                                 </li>
                                 <li class="d-flex justify-content-between"><span>{{ __('messages.days.5') }}</span><span>9:00 -
                                         20:00</span></li>

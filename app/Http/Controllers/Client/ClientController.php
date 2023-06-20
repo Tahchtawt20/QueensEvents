@@ -22,7 +22,7 @@ class ClientController extends Controller
     public function index()
     {
         $userId = auth()->id();
-        $event = event::where('id_user', $userId)->with('eventType')->paginate(10);
+        $event = event::where('id_user', $userId)->where('date_event','<>','2000-01-01')->where('time_event','<>','00:00:00')->with('eventType')->paginate(10);
         return view('myEvents', compact('event'));
     }
 
@@ -30,7 +30,7 @@ class ClientController extends Controller
     {
         $event = eventType::all();
         $reservedDates = event::pluck('date_event')->toArray();
-        return view('reservation', compact('event' , 'reservedDates'));
+        return view('reservation', compact('event', 'reservedDates'));
     }
 
 
@@ -51,6 +51,13 @@ class ClientController extends Controller
             'time_event' => $request->time,
             'id_user' => $userId,
         ]);
-        return redirect()->route('myevents')->with('status','messages.statusAdd');
+        return redirect()->route('myevents')->with('status', 'messages.statusAdd');
+    }
+
+    public function cancelReservation(Request $request, string $id)
+    {
+        DB::table('event')->where('id', $id)
+            ->update(['date_event' => '2000-01-01','time_event'=>'00:00:00']);
+        return redirect()->route('myevents')->with('status', 'messages.statusCancel');
     }
 }

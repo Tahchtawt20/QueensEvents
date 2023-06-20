@@ -34,6 +34,7 @@ Route::get('lang/{lang}',[
 Route::get('/reservation', [ClientController::class ,'create' ])->name('reservation')->middleware('role:client');
 Route::post('/reservation' , [ClientController::class ,'store'])->name('storeRes');
 Route::get('/myevents' , [ClientController::class ,'index'])->name('myevents')->middleware('role:client');
+Route::put('/edit/{id}' , [ClientController::class ,'cancelReservation'])->name('edit')->middleware('role:client');
 
 // Client And Owner Routes
 Route::get('/myaccount' , [userController::class ,'index'])->name('indexAcc');

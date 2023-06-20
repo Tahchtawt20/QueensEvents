@@ -39,8 +39,18 @@
                                     <td><strong>{{ $event->eventType->name }}</strong></td>
                                     <td><strong>{{ $event->user->name }}</strong></td>
                                     <td><strong>{{ $event->theme }}</strong></td>
-                                    <td><strong>{{ $event->date_event }}</strong></td>
-                                    <td><strong>{{ $event->time_event }}</strong></td>
+                                    <td><strong>
+                                        @if ($event->date_event == '2000-01-01')
+                                        <span class="text-danger">{{ __('messages.canceled') }}</span>
+                                    @else
+                                        {{ $event->date_event }}
+                                    @endif
+                                    </strong></td>
+                                    <td><strong>@if ($event->time_event == '00:00:00')
+                                        <span class="text-danger">{{ __('messages.canceled') }}</span>
+                                    @else
+                                        {{ $event->time_event }}
+                                    @endif</strong></td>
                                 </tr>
                                 @php $ide++ @endphp
                             @empty
