@@ -108,13 +108,13 @@
                         <div id="carouselJuiceControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{ asset('pic345.jpg') }}" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('sb1.jpg') }}" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('pic456.jpg') }}" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('sb2.jpg') }}" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('pic123.jpg') }}" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('sb3.jpg') }}" alt="Third slide">
                                 </div>
 
                             </div>
