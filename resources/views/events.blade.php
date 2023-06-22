@@ -27,15 +27,16 @@
                     </div>
                     <div class="col-lg-6 hero-right">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <br>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{ asset('picWed1.jpg') }}" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('picWed11.jpg') }}" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('picWed2.jpg') }}" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('picWed22.jpg') }}" alt="Third slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('horse.jpg') }}" alt="Fourth slide">
+                                    <img class="d-block w-100" src="{{ asset('picWed33.jpg') }}" alt="Fourth slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -56,13 +57,13 @@
                         <div id="carouselControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{ asset('picCer1.jpg') }}" alt="First dish">
+                                    <img class="d-block w-100" src="{{ asset('picCer11.jpg') }}" alt="First dish">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('picCer2.jpg') }}" alt="Second dish">
+                                    <img class="d-block w-100" src="{{ asset('picCer22.jpg') }}" alt="Second dish">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('picCer3.jpg') }}" alt="Third dish">
+                                    <img class="d-block w-100" src="{{ asset('picCer33.jpg') }}" alt="Third dish">
                                 </div>
 
                             </div>
