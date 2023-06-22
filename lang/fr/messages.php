@@ -51,7 +51,7 @@ return [
     'waiter' => 'Patron des Serveurs',
     'decor' => 'Designer d\'intérieur',
     'notFound' => '404 - Page Introuvable',
-    'statusAdd' => 'Votre réservation est faite avec succès !',
+    'statusAdd' => 'Votre réservation est faite avec succès ! Nous allons vous contacter dés que possible .',
     'statusUpdate' => 'Vos informations sont modifiées avec succès !',
     'statusCancel'=>'Votre réservation a été annulée. N\'hésitez pas à nous contacter si vous avez des questions ou si vous avez besoin d\'une assistance supplémentaire',
     'editAccount' => 'Modifier les informations de votre compte',
