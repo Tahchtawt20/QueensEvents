@@ -76,5 +76,10 @@ return [
     'wedding' => 'Wedding',
     'grad'=>'Graduation',
     'bap'=>'Moroccan Baptism',
-    'price'=>'Price'
+    'price'=>'Price',
+    'white'=>'White',
+    'bluepink'=>'Pink And Blue',
+    'summer'=>'Summer',
+    'starry'=>'Starry Night',
+    'moroccanTheme'=>'Moroccan'
 ];

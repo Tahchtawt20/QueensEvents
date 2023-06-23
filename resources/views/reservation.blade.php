@@ -35,7 +35,7 @@
                                     <select class="form-control @error('events') is-invalid @enderror" value="{{ old('events') }}" name="events" id="selectPerson" required>
                                         <option disabled selected>{{ __('messages.eventType') }}</option>
                                         @foreach ($event as $event)
-                                            <option value="{{ $event->id }}">{{ $event->name }}</option>
+                                            <option value="{{ $event->id }}">{{__($event->name) }}</option>
                                         @endforeach
                                     </select>
                                     @error('events')
@@ -49,7 +49,13 @@
                                 <div class="col-md-12 form-group">
                                     <select class="form-control @error('themes') is-invalid @enderror" value="{{ old('themes') }}" name="themes" id="selectPerson" required>
                                         <option selected disabled>{{ __('messages.themes') }}</option>
-                                        <option>theme 1</option>
+                                        <option>{{ __('messages.white') }}</option>
+                                        <option>{{ __('messages.bluepink') }}</option>
+                                        <option>{{ __('messages.starry') }}</option>
+                                        <option>Hindi</option>
+                                        <option>{{ __('messages.moroccanTheme') }}</option>
+                                        <option>{{ __('messages.summer') }}</option>
+                                        <option>Tropical</option>
                                         <option>{{ __('messages.personalized') }}</option>
                                     </select>
                                     @error('themes')

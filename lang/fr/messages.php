@@ -72,5 +72,11 @@ return [
     'canceled'=>'Annulée',
     'wedding'=>'Mariage',
     'grad'=>'Graduation' ,
-    'bap'=> 'Marocain Baptême' 
+    'bap'=> 'Marocain Baptême',
+    'price'=>'Prix',
+    'white'=>'Blanc',
+    'bluepink'=>'Rose et Blue',
+    'summer'=>'Été', 
+    'starry'=>'Nuit Étoilée',
+    'moroccanTheme'=>'Marocain'
 ];

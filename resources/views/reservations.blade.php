@@ -1,5 +1,5 @@
 @extends('layouts.mylayout')
-@section('title',__('messages.reservation').'s')
+@section('title', __('messages.reservation') . 's')
 @section('content')
     <!-- Reservation Section -->
     <style>
@@ -17,6 +17,43 @@
                         {{ __('messages.reservation') }}s
                     </h2>
                 </div>
+                <div class="card">
+                    <div style='height:400px'>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Retrieve the necessary data from your Laravel backend
+                            const data = {!! json_encode($data) !!};
+
+                            var labels = data.map(function(item) {
+                                return item.name ;
+                            });
+
+                            var percentages = data.map(function(item) {
+                                return item.percentage;
+                            });
+
+                            var ctx = document.getElementById('pieChart').getContext('2d');
+                            var chart = new Chart(ctx, {
+                                type: 'pie',
+                                data: {
+                                    labels: labels,
+                                    datasets: [{
+                                        data: percentages,
+                                        backgroundColor: ["#f4ede5","#f2a7a7","#f06e6e", "#f34949"
+                                        ],
+                                    }]
+                                },
+                                options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+                <br>
                 <div class="row d-flex justify-content-center">
                     <table class="table table-hover table-striped">
                         <thead>
@@ -37,22 +74,24 @@
                                 <tr>
                                     <th>{{ $ide }}</th>
                                     <td><strong>{{ $event->name }}</strong></td>
-                                    <td><strong>{{ $event->eventType->name }}</strong></td>
+                                    <td><strong>{{ __($event->eventType->name) }}</strong></td>
                                     <td><strong>{{ $event->eventType->price }}DH</strong></td>
                                     <td><strong>{{ $event->user->name }}</strong></td>
                                     <td><strong>{{ $event->theme }}</strong></td>
                                     <td><strong>
-                                        @if ($event->date_event == '2000-01-01')
-                                        <span class="text-danger">{{ __('messages.canceled') }}</span>
-                                    @else
-                                        {{ $event->date_event }}
-                                    @endif
-                                    </strong></td>
-                                    <td><strong>@if ($event->time_event == '00:00:00')
-                                        <span class="text-danger">{{ __('messages.canceled') }}</span>
-                                    @else
-                                        {{ $event->time_event }}
-                                    @endif</strong></td>
+                                            @if ($event->date_event == '2000-01-01')
+                                                <span class="text-danger">{{ __('messages.canceled') }}</span>
+                                            @else
+                                                {{ $event->date_event }}
+                                            @endif
+                                        </strong></td>
+                                    <td><strong>
+                                            @if ($event->time_event == '00:00:00')
+                                                <span class="text-danger">{{ __('messages.canceled') }}</span>
+                                            @else
+                                                {{ $event->time_event }}
+                                            @endif
+                                        </strong></td>
                                 </tr>
                                 @php $ide++ @endphp
                             @empty
