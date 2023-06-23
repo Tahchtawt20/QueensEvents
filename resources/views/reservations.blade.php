@@ -27,7 +27,8 @@
                             const data = {!! json_encode($data) !!};
 
                             var labels = data.map(function(item) {
-                                return item.name ;
+                                // return "<?php echo __( " item.name " ) ?>" ;
+                                return item.name;
                             });
 
                             var percentages = data.map(function(item) {
