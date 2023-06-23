@@ -27,8 +27,27 @@
                             const data = {!! json_encode($data) !!};
 
                             var labels = data.map(function(item) {
-                                // return "<?php echo __( " item.name " ) ?>" ;
-                                return item.name;
+                                switch (item.name) {
+                                    case 'messages.wedding':
+                                        return 'Wedding';
+                                        break
+                                    case 'messages.grad':
+                                        return 'Graduation'
+                                        break
+                                    case 'messages.birthday':
+                                        return 'Birthday'
+                                        break
+                                    case 'messages.bap':
+                                        return 'Moroccan Baptism'
+                                        break
+                                    case 'messages.circumcision':
+                                        return 'Circumcision'
+                                        break
+                                    case 'messages.gender':
+                                        return 'Gender Reveal'
+                                        break
+                                }
+
                             });
 
                             var percentages = data.map(function(item) {
@@ -42,7 +61,14 @@
                                     labels: labels,
                                     datasets: [{
                                         data: percentages,
-                                        backgroundColor: ["#f4ede5","#f2a7a7","#f06e6e", "#f34949"
+                                        backgroundColor: [
+                                            "#ffeaea",
+                                            "#ffd0d0",
+                                            "#ffb7b7",
+                                            "#ff9d9d",
+                                            "#ff8484",
+                                            "#ff6a6a",
+                                            "#ff5151",
                                         ],
                                     }]
                                 },
